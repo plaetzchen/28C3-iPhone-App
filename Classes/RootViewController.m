@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "_7C3AppDelegate.h"
+#import "28C3AppDelegate.h"
 #import "Event.h"
 #import "EventDetailView.h"
 #import "HelpView.h"
@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 		
-	appDelegate = (_7C3AppDelegate *)[[UIApplication sharedApplication] delegate];
+	appDelegate = (Fahrplan28C3AppDelegate *)[[UIApplication sharedApplication] delegate];
 	self.title = @"28C3";
     
     self.firstDayArray = [NSMutableArray arrayWithCapacity:20];

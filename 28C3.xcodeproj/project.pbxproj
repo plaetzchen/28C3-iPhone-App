@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1D3623260D0F684500981E51 /* _7C3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* _7C3AppDelegate.m */; };
+		1D3623260D0F684500981E51 /* 28C3AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* 28C3AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
 		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
@@ -44,9 +44,9 @@
 
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D3623240D0F684500981E51 /* _7C3AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _7C3AppDelegate.h; sourceTree = "<group>"; };
-		1D3623250D0F684500981E51 /* _7C3AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _7C3AppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* 27C3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 27C3.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D3623240D0F684500981E51 /* 28C3AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 28C3AppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* 28C3AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = 28C3AppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* 28C3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 28C3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2892E40F0DC94CBA00A64D0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		28A0AAE50D9B0CCF005BE974 /* _7C3_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _7C3_Prefix.pch; sourceTree = "<group>"; };
@@ -74,7 +74,7 @@
 		B423C41F1492528C00D51E17 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B423C4221492600300D51E17 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		B423C4241492600900D51E17 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
-		B423C4261492687A00D51E17 /* 27C3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = 27C3.entitlements; sourceTree = "<group>"; };
+		B423C4261492687A00D51E17 /* 28C3.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = 28C3.entitlements; sourceTree = "<group>"; };
 		B486F33D12AF8AB500DB0527 /* WebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebView.h; path = ../WebView.h; sourceTree = "<group>"; };
 		B486F33E12AF8AB500DB0527 /* WebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebView.m; path = ../WebView.m; sourceTree = "<group>"; };
 		B486F33F12AF8AB500DB0527 /* WebView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebView.xib; sourceTree = "<group>"; };
@@ -116,8 +116,8 @@
 				B4DD346812AF0492003C8FF2 /* XMLParser.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
-				1D3623240D0F684500981E51 /* _7C3AppDelegate.h */,
-				1D3623250D0F684500981E51 /* _7C3AppDelegate.m */,
+				1D3623240D0F684500981E51 /* 28C3AppDelegate.h */,
+				1D3623250D0F684500981E51 /* 28C3AppDelegate.m */,
 				B4DD35AC12AF1A09003C8FF2 /* EventDetailView.h */,
 				B4DD35AD12AF1A09003C8FF2 /* EventDetailView.m */,
 				B407DDD012B136CF00B9E906 /* HelpView.h */,
@@ -129,7 +129,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* 27C3.app */,
+				1D6058910D05DD3D006BFB54 /* 28C3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,7 +137,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
-				B423C4261492687A00D51E17 /* 27C3.entitlements */,
+				B423C4261492687A00D51E17 /* 28C3.entitlements */,
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
@@ -199,9 +199,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* 27C3 */ = {
+		1D6058900D05DD3D006BFB54 /* 28C3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "27C3" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "28C3" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -211,9 +211,9 @@
 			);
 			dependencies = (
 			);
-			name = 27C3;
+			name = 28C3;
 			productName = 27C3;
-			productReference = 1D6058910D05DD3D006BFB54 /* 27C3.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* 28C3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -224,7 +224,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "27C3" */;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "28C3" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 1;
@@ -239,7 +239,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* 27C3 */,
+				1D6058900D05DD3D006BFB54 /* 28C3 */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
-				1D3623260D0F684500981E51 /* _7C3AppDelegate.m in Sources */,
+				1D3623260D0F684500981E51 /* 28C3AppDelegate.m in Sources */,
 				28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */,
 				B4DD346912AF0492003C8FF2 /* XMLParser.m in Sources */,
 				B4DD354612AF11DC003C8FF2 /* Event.m in Sources */,
@@ -301,7 +301,7 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = 27C3.entitlements;
+				CODE_SIGN_ENTITLEMENTS = 28C3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -310,7 +310,7 @@
 				GCC_PREFIX_HEADER = _7C3_Prefix.pch;
 				INFOPLIST_FILE = "_7C3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = 27C3;
+				PRODUCT_NAME = 28C3;
 				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
@@ -323,7 +323,7 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = 27C3.entitlements;
+				CODE_SIGN_ENTITLEMENTS = 28C3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Philip Brechler";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Philip Brechler";
 				COPY_PHASE_STRIP = YES;
@@ -331,7 +331,7 @@
 				GCC_PREFIX_HEADER = _7C3_Prefix.pch;
 				INFOPLIST_FILE = "_7C3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = 27C3;
+				PRODUCT_NAME = 28C3;
 				PROVISIONING_PROFILE = "D2482FCF-AAC4-4F4E-AE65-5B28BAE0CDEA";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "D2482FCF-AAC4-4F4E-AE65-5B28BAE0CDEA";
 				VALIDATE_PRODUCT = YES;
@@ -360,14 +360,14 @@
 					armv6,
 					armv7,
 				);
-				CODE_SIGN_ENTITLEMENTS = 27C3.entitlements;
+				CODE_SIGN_ENTITLEMENTS = 28C3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Philip Brechler";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = _7C3_Prefix.pch;
 				INFOPLIST_FILE = "_7C3-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
-				PRODUCT_NAME = 27C3;
+				PRODUCT_NAME = 28C3;
 				PROVISIONING_PROFILE = "D2482FCF-AAC4-4F4E-AE65-5B28BAE0CDEA";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -401,7 +401,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "27C3" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "28C3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058950D05DD3E006BFB54 /* Release */,
@@ -411,7 +411,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "27C3" */ = {
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "28C3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C01FCF5008A954540054247B /* Release */,

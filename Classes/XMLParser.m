@@ -7,7 +7,7 @@
 //
 
 #import "XMLParser.h"
-#import "_7C3AppDelegate.h"
+#import "28C3AppDelegate.h"
 #import "Event.h"
 
 @implementation XMLParser
@@ -16,7 +16,7 @@
 	
 	[super init];
 	
-	appDelegate = (_7C3AppDelegate *)[[UIApplication sharedApplication] delegate];
+	appDelegate = (Fahrplan28C3AppDelegate *)[[UIApplication sharedApplication] delegate];
 	
 	return self;
 }

@@ -1,17 +1,17 @@
 //
-//  _7C3AppDelegate.m
+//  28C3AppDelegate.m
 //  27C3
 //
 //  Created by Philip Brechler on 08.12.10.
 //  Copyright 2010 TimeCoast Communications. All rights reserved.
 //
 
-#import "_7C3AppDelegate.h"
+#import "28C3AppDelegate.h"
 #import "RootViewController.h"
 #import "XMLParser.h"
 
 
-@implementation _7C3AppDelegate
+@implementation Fahrplan28C3AppDelegate
 
 @synthesize window;
 @synthesize navigationController, events;

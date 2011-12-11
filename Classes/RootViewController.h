@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@class _7C3AppDelegate, EventDetailView,HelpView;
+@class Fahrplan28C3AppDelegate, EventDetailView,HelpView;
 
 @interface RootViewController : UITableViewController <UIAlertViewDelegate, UISearchBarDelegate> {
 	
-	_7C3AppDelegate *appDelegate;
+	Fahrplan2C3AppDelegate *appDelegate;
 	EventDetailView *edvController;
 	HelpView *hvController;
 	
