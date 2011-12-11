@@ -97,8 +97,8 @@
     NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", 
                           documentsDirectory];
     
-    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:[[NSURL alloc]initFileURLWithPath:fileName]];
-        
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL fileURLWithPath:fileName]];
+
 		//Initialize the delegate.
 		XMLParser *parser = [[XMLParser alloc] initXMLParser];
         
@@ -176,6 +176,7 @@
 	[events release];
 	[navigationController release];
 	[window release];
+    [connection release];
 	[super dealloc];
 }
 
