@@ -139,7 +139,7 @@
                 [favoritesArray addObject:aEvent];
                 
                 [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
-                
+                [favoritesArray release];
                 break;
             }
                 
@@ -156,11 +156,13 @@
                 NSArray *durationArray = [aEvent.duration componentsSeparatedByString:@":"];
                 double hours = [[durationArray objectAtIndex:0] doubleValue] * 60 * 60;
                 double minutes = [[durationArray objectAtIndex:1] doubleValue] * 60;
-                event.endDate   = [[NSDate alloc] initWithTimeInterval:hours+minutes   sinceDate:event.startDate];
+                event.endDate = [NSDate dateWithTimeInterval:hours+minutes sinceDate:event.startDate];
                 
                 [event setCalendar:[eventStore defaultCalendarForNewEvents]];
+
                 NSError *err;
                 [eventStore saveEvent:event span:EKSpanThisEvent error:&err]; 
+                [eventStore release];
                 if (!err){
                     UIAlertView *dateAlert = [[UIAlertView alloc]initWithTitle:@"Saved" message:@"The event was saved to your calendar" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
                     [dateAlert show];
@@ -184,9 +186,10 @@
                 wvController.urlToOpen = theUrl;
                 
                 [self.navigationController pushViewController:wvController animated:YES];
-                
+
                 break;
-            case 1: {
+            case 1:
+                NSLog(@"Event");
                 EKEventStore *eventStore = [[EKEventStore alloc] init];
                 
                 EKEvent *event  = [EKEvent eventWithEventStore:eventStore];
@@ -199,20 +202,22 @@
                 NSArray *durationArray = [aEvent.duration componentsSeparatedByString:@":"];
                 double hours = [[durationArray objectAtIndex:0] doubleValue] * 60 * 60;
                 double minutes = [[durationArray objectAtIndex:1] doubleValue] * 60;
-                event.endDate   = [[NSDate alloc] initWithTimeInterval:hours+minutes   sinceDate:event.startDate];
+                event.endDate = [NSDate dateWithTimeInterval:hours+minutes sinceDate:event.startDate];
                 
                 [event setCalendar:[eventStore defaultCalendarForNewEvents]];
                 NSError *err;
                 [eventStore saveEvent:event span:EKSpanThisEvent error:&err]; 
+
+                [eventStore release];
+
                 if (!err){
                     UIAlertView *dateAlert = [[UIAlertView alloc]initWithTitle:@"Saved" message:@"The event was saved to your calendar" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
                     [dateAlert show];
                     [dateAlert release];
                 }
                 break;
-            }			
+        }			
                 
-        }
     }
 }
 	

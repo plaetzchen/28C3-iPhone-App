@@ -114,6 +114,7 @@
     }
 		else
 			NSLog(@"Error Error Error!!!");
+    [parser release];
 }
 
 
