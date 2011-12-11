@@ -192,16 +192,16 @@
     else {
         switch (section) {
             case 0:
-                return @"2011-12-27";
+                return @"Tuesday";
                 break;
             case 1:
-                return @"2011-12-28";
+                return @"Wednesday";
                 break;
             case 2:
-                return @"2011-12-29";
+                return @"Thurdsay";
                 break;
             case 3:
-                return @"2011-12-30";
+                return @"Friday";
                 break;
         }
         return @"";
