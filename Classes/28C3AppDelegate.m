@@ -205,7 +205,6 @@
 	[events release];
 	[navigationController release];
 	[window release];
-    [connection release];
 	[super dealloc];
 }
 
