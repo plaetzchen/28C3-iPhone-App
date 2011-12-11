@@ -9,7 +9,7 @@
 #import "28C3AppDelegate.h"
 #import "RootViewController.h"
 #import "XMLParser.h"
-
+#import "Event.h"
 
 @implementation Fahrplan28C3AppDelegate
 
@@ -82,6 +82,9 @@
     NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", 
                           documentsDirectory];
    
+    NSFileManager *fm = [[NSFileManager defaultManager] init];
+    [fm removeItemAtPath:fileName error:nil];
+    [fm release];
     [txt writeToFile:fileName atomically:NO encoding:NSUTF8StringEncoding error:nil];
     [self parseXML];
 
@@ -110,6 +113,32 @@
         
     if(success){
 			NSLog(@"No Errors");
+        
+        NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
+        NSData *dataRepresentingSavedArray = [currentDefaults objectForKey:@"favorites"];
+        NSMutableArray *favoritesArray;
+        if (dataRepresentingSavedArray != nil)
+        {
+            NSArray *oldSavedArray = [NSKeyedUnarchiver unarchiveObjectWithData:dataRepresentingSavedArray];
+            if (oldSavedArray != nil)
+                favoritesArray = [[NSMutableArray alloc] initWithArray:oldSavedArray];
+            else
+                favoritesArray = [[NSMutableArray alloc] init];
+        }
+        
+        for (int i=0; i < favoritesArray.count; i++){
+            Event *savedEvent = [favoritesArray objectAtIndex:i];
+            for (int j=0;j < self.events.count;j++){
+                Event *newEvent = [self.events objectAtIndex:j];
+                if (savedEvent.eventID == newEvent.eventID){
+                    [favoritesArray replaceObjectAtIndex:i withObject:newEvent];
+                }
+            }
+        }
+        
+        [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+        
         [[NSNotificationCenter defaultCenter] postNotificationName:@"xmlParsed" object:self];
     }
 		else
