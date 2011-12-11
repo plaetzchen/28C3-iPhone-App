@@ -38,7 +38,7 @@
     [self.window addSubview:tabBarController.view];
     [self.window makeKeyAndVisible];
 	
-	 application.applicationIconBadgeNumber = 0;
+    application.applicationIconBadgeNumber = 0;
     [self loadXML];
 
     return YES;
@@ -82,9 +82,8 @@
     NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", 
                           documentsDirectory];
    
-    NSFileManager *fm = [[NSFileManager defaultManager] init];
+    NSFileManager *fm = [NSFileManager defaultManager];
     [fm removeItemAtPath:fileName error:nil];
-    [fm release];
     [txt writeToFile:fileName atomically:NO encoding:NSUTF8StringEncoding error:nil];
     [self parseXML];
 
@@ -112,7 +111,7 @@
 		BOOL success = [xmlParser parse];
         
     if(success){
-			NSLog(@"No Errors");
+        NSLog(@"No Errors");
         
         NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
         NSData *dataRepresentingSavedArray = [currentDefaults objectForKey:@"favorites"];
@@ -142,7 +141,7 @@
         [[NSNotificationCenter defaultCenter] postNotificationName:@"xmlParsed" object:self];
     }
 		else
-			NSLog(@"Error Error Error!!!");
+			NSLog(@"Error parsing xml");
     [parser release];
 }
 
