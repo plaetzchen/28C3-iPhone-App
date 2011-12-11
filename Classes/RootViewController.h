@@ -12,7 +12,7 @@
 
 @interface RootViewController : UITableViewController <UIAlertViewDelegate, UISearchBarDelegate> {
 	
-	Fahrplan2C3AppDelegate *appDelegate;
+	Fahrplan28C3AppDelegate *appDelegate;
 	EventDetailView *edvController;
 	HelpView *hvController;
 	
