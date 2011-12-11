@@ -470,7 +470,7 @@
     
     letUserSelectRow = YES;
     searching = NO;
-    self.navigationItem.rightBarButtonItem = nil;
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:self action:@selector(reloadTheXML)] autorelease];
     self.tableView.scrollEnabled = YES;
     
     [self.tableView reloadData];
