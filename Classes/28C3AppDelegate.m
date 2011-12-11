@@ -14,7 +14,7 @@
 @implementation Fahrplan28C3AppDelegate
 
 @synthesize window;
-@synthesize navigationController, events;
+@synthesize navigationController, tabBarController, events;
 
 
 #pragma mark -
@@ -35,7 +35,7 @@
         [fmngr release];
     }
     // Add the navigation controller's view to the window and display.
-    [self.window addSubview:navigationController.view];
+    [self.window addSubview:tabBarController.view];
     [self.window makeKeyAndVisible];
 	
 	 application.applicationIconBadgeNumber = 0;

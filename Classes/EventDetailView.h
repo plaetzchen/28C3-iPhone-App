@@ -16,6 +16,8 @@
 	Event *aEvent;
 	WebView *wvController;
 	ReminderView *rvController;
+    
+    BOOL fromFavorites;
 	
 	IBOutlet UITextView *abstractText;
 	IBOutlet UILabel *titleLabel;
@@ -32,6 +34,7 @@
 }
 
 @property (nonatomic, retain) Event *aEvent;
+@property (nonatomic) BOOL fromFavorites;
 
 -(IBAction)actionButtonPressed:(id)sender;
 

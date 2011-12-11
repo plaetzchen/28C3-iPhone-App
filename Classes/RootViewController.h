@@ -8,13 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class Fahrplan28C3AppDelegate, EventDetailView,HelpView;
+@class Fahrplan28C3AppDelegate, EventDetailView;
 
 @interface RootViewController : UITableViewController <UIAlertViewDelegate, UISearchBarDelegate> {
 	
 	Fahrplan28C3AppDelegate *appDelegate;
 	EventDetailView *edvController;
-	HelpView *hvController;
 	
 	NSMutableArray *firstDayArray;
 	NSMutableArray *secondDayArray;
@@ -45,7 +44,6 @@
 @property (nonatomic,retain) NSMutableArray *fourthDayAfterMidnightArray;
 
 -(void)organizeTheData;
-- (IBAction)helpButtonPressed:(id)sender;
 - (BOOL)isSameDay:(NSDate*)date1 to:(NSDate*)date2;
 - (void)reloadTheXML;
 

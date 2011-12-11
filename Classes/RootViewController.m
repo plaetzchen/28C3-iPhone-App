@@ -10,7 +10,6 @@
 #import "28C3AppDelegate.h"
 #import "Event.h"
 #import "EventDetailView.h"
-#import "HelpView.h"
 
 @implementation RootViewController
 
@@ -24,7 +23,7 @@
     [super viewDidLoad];
 		
 	appDelegate = (Fahrplan28C3AppDelegate *)[[UIApplication sharedApplication] delegate];
-	self.title = @"28C3";
+	self.title = @"Fahrplan";
     
     self.firstDayArray = [NSMutableArray arrayWithCapacity:20];
 	self.secondDayArray = [NSMutableArray arrayWithCapacity:20];
@@ -160,15 +159,6 @@
     [self.tableView reloadData];
 }
 
-- (IBAction)helpButtonPressed:(id)sender{
-	
-	if(hvController == nil)
-		hvController = [[HelpView alloc] initWithNibName:@"HelpView" bundle:[NSBundle mainBundle]];
-
-	
-	[self.navigationController pushViewController:hvController animated:YES];
-
-}
 
 - (BOOL)isSameDay:(NSDate*)date1 to:(NSDate*)date2 {
     NSCalendar* calendar = [NSCalendar currentCalendar];
@@ -397,7 +387,8 @@
         }
 	}
 	edvController.aEvent = aEvent;
-	
+	edvController.fromFavorites = NO;
+    
 	[self.navigationController pushViewController:edvController animated:YES];
 }
 
