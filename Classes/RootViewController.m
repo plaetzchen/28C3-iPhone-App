@@ -456,6 +456,10 @@
         if (titleResultsRange.length > 0 || subtitleResultsRange.length >0 || abstractResultsRange.length > 0)
             [searchAllEvents addObject:aEvent];
     }
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"realDate" ascending:TRUE];
+    [searchAllEvents sortUsingDescriptors:[NSArray arrayWithObject:sortDescriptor]];
+    [sortDescriptor release];
 
 }
 

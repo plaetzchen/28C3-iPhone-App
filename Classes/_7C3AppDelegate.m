@@ -34,12 +34,12 @@
         }
         [fmngr release];
     }
-    [self loadXML];
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:navigationController.view];
     [self.window makeKeyAndVisible];
 	
 	 application.applicationIconBadgeNumber = 0;
+    [self loadXML];
 
     return YES;
 }
@@ -48,7 +48,7 @@
     NSURL *myURL = [NSURL URLWithString:@"http://events.ccc.de/congress/2011/Fahrplan/schedule.en.xml"];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:myURL
                                                            cachePolicy:NSURLRequestReloadIgnoringLocalCacheData
-                                                       timeoutInterval:60];
+                                                       timeoutInterval:10];
     
     [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
@@ -64,6 +64,9 @@
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     [fahrplanData release];
     [connection release];
+    UIAlertView *offlineAlert = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"Could not update data. Using last cached data!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [offlineAlert show];
+    [offlineAlert release];
     [self parseXML];
 }
 
