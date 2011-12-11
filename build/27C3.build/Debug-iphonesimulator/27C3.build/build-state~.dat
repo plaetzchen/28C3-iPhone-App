@@ -1,0 +1,262 @@
+T27C3
+v7
+r0
+t313459155.799096
+cCheck dependencies
+cProcessInfoPlistFile /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/Info.plist _7C3-Info.plist
+cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
+cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
+cProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/main.o /Users/pbrechler/Dropbox/XCode/27C3/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/_7C3AppDelegate.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/RootViewController.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3 normal i386
+cGenerateDSYMFile /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app.dSYM /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3
+cTouch /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk
+c000000004CF24AA10000000000000110
+t1290947233
+s272
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004CC12246000000000029B310
+t1287725638
+s2732816
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004CC1226D000000000029D5D0
+t1287725677
+s2741712
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004CC1225F0000000000001466
+t1287725663
+s5222
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004CC1281F0000000000000AA1
+t1287727135
+s2721
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004CC12883000000000074D7B0
+t1287727235
+s7657392
+
+N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk/usr/include/Availability.h
+c000000004CB3FA080000000000001ADD
+t1286863368
+s6877
+
+N/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.h
+c000000004CFECA3A00000000000000F3
+t1291766330
+s243
+i<UIKit/UIKit.h>
+
+N/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m
+c000000004CFECA3A00000000000010CB
+t1291766330
+s4299
+i"RootViewController.h"
+
+N/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.h
+c000000004CFECA3A00000000000001D5
+t1291766330
+s469
+i<UIKit/UIKit.h>
+
+N/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m
+c000000004CFECA3A0000000000000AA6
+t1291766330
+s2726
+i"_7C3AppDelegate.h"
+i"RootViewController.h"
+
+N/Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
+c000000004CFECA3A0000000000005FE8
+t1291766330
+s24552
+
+N/Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
+c000000004CFECA3A000000000000444F
+t1291766330
+s17487
+
+N/Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch
+c000000004CFECA3A000000000000013A
+t1291766330
+s314
+i<Availability.h>
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/27C3.LinkFileList
+c000000004CFECA50000000000000016C
+t1291766352
+s364
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/RootViewController.o
+t1291766355
+s41156
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/_7C3AppDelegate.o
+t1291766355
+s52440
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/main.o
+t1291766355
+s6296
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app
+t1291766355
+s238
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app.dSYM
+t1291766355
+s102
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3
+t1291766355
+s17852
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/Info.plist
+t1291766352
+s579
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/MainWindow.nib
+t1291766353
+s1506
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/PkgInfo
+t1291766352
+s8
+
+N/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/RootViewController.nib
+t1291766353
+s979
+
+N/Users/pbrechler/Dropbox/XCode/27C3/main.m
+c000000004CFECA3A0000000000000171
+t1291766330
+s369
+i<UIKit/UIKit.h>
+
+N/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch.gch
+t1291766354
+s15453392
+
+N_7C3-Info.plist
+c000000004CFECA3A000000000000038D
+t1291766330
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies313459152#313459152#0(0"0(0#1#0"3343187568374212096#0"0#
+
+CCompileC build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/RootViewController.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s313459155.122041
+e313459155.202129
+r1
+xCompileC
+xbuild/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/RootViewController.o
+x/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@72"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m313459155#313459155#0(0"0(0#0#64"/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m8603608512#1857"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator -I/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources/i386 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/_7C3AppDelegate.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s313459154.949895
+e313459155.168379
+r1
+xCompileC
+xbuild/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/_7C3AppDelegate.o
+x/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@69"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m313459154#313459155#0(0"0(0#0#61"/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m8599194784#1851"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator -I/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources/i386 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/_7C3AppDelegate.o0#
+
+CCompileC build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/main.o /Users/pbrechler/Dropbox/XCode/27C3/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s313459154.948644
+e313459155.121941
+r1
+xCompileC
+xbuild/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/main.o
+x/Users/pbrechler/Dropbox/XCode/27C3/main.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@50"Compile /Users/pbrechler/Dropbox/XCode/27C3/main.m313459154#313459155#0(0"0(0#0#42"/Users/pbrechler/Dropbox/XCode/27C3/main.m8599654848#1821"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator -I/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources/i386 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/main.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/main.o0#
+
+CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
+s313459152.808149
+e313459153.871587
+r1
+xCompileXIB
+x/Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib313459152#313459153#0(0"0(0#0#50"/Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib8602584192#558"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/MainWindow.nib /Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
+s313459152.827257
+e313459153.871378
+r1
+xCompileXIB
+x/Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
+lSLF07#2@33"CompileXIB RootViewController.xib313459152#313459153#0(0"0(0#0#58"/Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib8599690208#574"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/RootViewController.nib /Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk0#
+
+CGenerateDSYMFile /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app.dSYM /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3
+s313459155.604643
+e313459155.794729
+r1
+xGenerateDSYMFile
+x/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app.dSYM
+x/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3
+lSLF07#2@100"GenerateDSYMFile build/Debug-iphonesimulator/27C3.app.dSYM build/Debug-iphonesimulator/27C3.app/27C3313459155#313459155#0(0"0(0#0#77"/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C38604091680#365"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3 -o /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app.dSYM0#
+
+CLd /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3 normal i386
+s313459155.202215
+e313459155.604538
+r1
+xLd
+x/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3
+xnormal
+xi386
+lSLF07#2@82"Link /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C3313459155#313459155#0(0"0(0#0#0"8601898752#870"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -L/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator -F/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator -filelist /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/Objects-normal/i386/27C3.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/27C30#
+
+CProcessInfoPlistFile /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/Info.plist _7C3-Info.plist
+s313459152.767262
+e313459152.808033
+r1
+xProcessInfoPlistFile
+x/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/Info.plist
+x_7C3-Info.plist
+lSLF07#2@23"Process _7C3-Info.plist313459152#313459152#0(0"0(0#0#51"/Users/pbrechler/Dropbox/XCode/27C3/_7C3-Info.plist32370056120631408#461"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility _7C3-Info.plist -genpkginfo /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app/Info.plist0#
+
+CProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
+s313459153.871691
+e313459154.948402
+r1
+xProcessPCH
+x/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch.gch
+x_7C3_Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@26"Precompile _7C3_Prefix.pch313459153#313459154#0(0"0(0#0#51"/Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch8603859584#1719"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.2.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40200 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator -I/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources/i386 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/Debug-iphonesimulator/27C3.build/DerivedSources -c /Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch -o /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-cftlxjspfsxkypfdfyjylzmcvmyy/_7C3_Prefix.pch.gch0#
+
+CTouch /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app
+s313459155.794823
+e313459155.799027
+r1
+xTouch
+x/Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app
+lSLF07#2@78"Touch /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app313459155#313459155#0(0"0(0#0#0"8603908000#269"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pbrechler/Dropbox/XCode/27C3/build/Debug-iphonesimulator/27C3.app0#
+
