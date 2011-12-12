@@ -28,6 +28,7 @@
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"fahrplan.xml" ofType:nil];
         NSError *error;
         if(![fmngr copyItemAtPath:filePath toPath:[NSString stringWithFormat:@"%@/Documents/fahrplan.xml", NSHomeDirectory()] error:&error]) {
+            NSLog(@"Error: %@ %@", error, [error userInfo]);
         }
         [fmngr release];
     }
