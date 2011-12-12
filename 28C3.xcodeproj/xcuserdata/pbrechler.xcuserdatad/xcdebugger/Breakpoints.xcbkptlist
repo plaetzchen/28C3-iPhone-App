@@ -9,11 +9,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/FavoritesViewController.m"
-         timestampString = "345321753.723531"
+         timestampString = "345386449.294895"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "66"
-         endingLineNumber = "66"
+         startingLineNumber = "70"
+         endingLineNumber = "70"
          landmarkName = "-viewWillAppear:"
          landmarkType = "5">
       </FileBreakpoint>

@@ -25,6 +25,8 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"28c3_background_long"]];
+    [navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
     [super viewDidLoad];
 	self.title = @"Help";
 }

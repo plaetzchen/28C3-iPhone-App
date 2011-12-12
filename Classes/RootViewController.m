@@ -53,6 +53,11 @@
     self.tableView.tableHeaderView = searchBar;
     searchBar.autocorrectionType = UITextAutocorrectionTypeNo;
     searchBar.tintColor = [UIColor blackColor];
+    searchBar.backgroundImage = [UIImage imageNamed:@"28c3_navbar"];
+
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
+    
+    self.tableView.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"28c3_background"]] autorelease];
     
     searching = NO;
     letUserSelectRow = YES;
@@ -212,7 +217,7 @@
     }
 }
 
-#define SectionHeaderHeight 14
+#define SectionHeaderHeight 28
 
 
 - (CGFloat)tableView:(UITableView *)theTableView heightForHeaderInSection:(NSInteger)section {
@@ -233,18 +238,21 @@
 	
     // Create label with section title
     UILabel *label = [[[UILabel alloc] init] autorelease];
-    label.frame = CGRectMake(0, 0, 320, 18);
-    label.backgroundColor = [UIColor colorWithWhite:0.504 alpha:1.000];
-    label.textColor = [UIColor colorWithRed:0.009 green:0.910 blue:0.059 alpha:1.000];
+    label.frame = CGRectMake(0, 0, 320, 20);
+    label.backgroundColor = [UIColor clearColor];
+    label.textColor = [UIColor colorWithRed:0.577 green:0.409 blue:0.065 alpha:1.000];
 	label.textAlignment = UITextAlignmentCenter;
-    label.font = [UIFont fontWithName:@"Courier" size:12];;
+    label.font = [UIFont fontWithName:@"Helvetica" size:14];;
     label.text = sectionTitle;
 	
     // Create header view and add label as a subview
     UIView *view = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, SectionHeaderHeight)];
+    UIImageView *backgroundImage = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 320, SectionHeaderHeight)];
+    backgroundImage.image = [UIImage imageNamed:@"28c3_sectionheader"];
+    
     [view autorelease];
+    [view addSubview:backgroundImage];
     [view addSubview:label];
-	
     return view;
 }
 
@@ -312,14 +320,14 @@
 	if ([aEvent.track isEqualToString:@"Culture"]){
 		trackColor = [UIImage imageNamed:@"culture.png"];
 	}
-	else if ([aEvent.track isEqualToString:@"Society"]){
+	else if ([aEvent.track isEqualToString:@"Society and Politics"]){
 		trackColor = [UIImage imageNamed:@"society.png"];
 	}
 	else if ([aEvent.track isEqualToString:@"Hacking"]){
 		trackColor = [UIImage imageNamed:@"hacking.png"];
 	}
-	else if ([aEvent.track isEqualToString:@"Making"]){
-		trackColor = [UIImage imageNamed:@"making.png"];
+	else if ([aEvent.track isEqualToString:@"Show"]){
+		trackColor = [UIImage imageNamed:@"show.png"];
 	}
 	else if ([aEvent.track isEqualToString:@"Science"]){
 		trackColor = [UIImage imageNamed:@"science.png"];
@@ -338,8 +346,8 @@
 	cell.detailTextLabel.text = detailString;
 	cell.imageView.image = trackColor;
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-	cell.detailTextLabel.textColor = [UIColor colorWithWhite:1.000 alpha:1.000];
-	cell.textLabel.textColor = [UIColor colorWithRed:0.074 green:1.000 blue:0.001 alpha:1.000];
+	cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha:1.000];
+	cell.textLabel.textColor = [UIColor lightGrayColor];
 	cell.selectionStyle = UITableViewCellSelectionStyleGray;
 	cell.textLabel.font = [UIFont fontWithName:@"Courier-Bold" size:15];
 	cell.detailTextLabel.font = [UIFont fontWithName:@"Courier" size:10];

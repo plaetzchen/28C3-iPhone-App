@@ -10,6 +10,9 @@
 
 
 @interface HelpView : UIViewController {
+    
+    IBOutlet UINavigationBar *navigationBar;
+
 
 }
 
