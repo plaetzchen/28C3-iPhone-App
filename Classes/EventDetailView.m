@@ -79,31 +79,6 @@
 	
 }
 
-/*
-- (void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-}
-*/
-/*
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-}
-*/
-/*
-- (void)viewDidDisappear:(BOOL)animated {
-    [super viewDidDisappear:animated];
-}
-*/
-/*
-// Override to allow orientations other than the default portrait orientation.
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
-    // Return YES for supported orientations.
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
-}
-*/
-
-
-
 #pragma mark -
 #pragma mark UIActionSheetDelegate
 
@@ -140,7 +115,15 @@
                     favoritesArray = [[NSMutableArray alloc] init];
                 }
                 
-                [favoritesArray addObject:aEvent];
+                BOOL isAlreadyFavorite = NO;
+                
+                for (Event *favoriteEvent in favoritesArray) {
+                    if (favoriteEvent.eventID == aEvent.eventID){
+                        isAlreadyFavorite = YES;
+                    }
+                }
+                if (!isAlreadyFavorite)
+                    [favoritesArray addObject:aEvent];
                 
                 [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
                 [favoritesArray release];
