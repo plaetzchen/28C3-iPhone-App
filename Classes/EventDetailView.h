@@ -26,8 +26,9 @@
 	IBOutlet UILabel *durationLabel;
 	IBOutlet UILabel *subtitleLabel;
 	IBOutlet UILabel *idLabel;
-	IBOutlet UILabel *languageLabel;
-	IBOutlet UIBarButtonItem *actionButton;
+	IBOutlet UILabel *languageLabel;	
+    IBOutlet UILabel *trackLabel;
+
 	
 	
 

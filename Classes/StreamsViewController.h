@@ -11,6 +11,7 @@
 @interface StreamsViewController : UIViewController <UIWebViewDelegate> {
     
     IBOutlet UIWebView *streamWebView;
+    IBOutlet UINavigationBar *navigationBar;
 }
 
 @property (nonatomic,retain) UIWebView *streamWebView;

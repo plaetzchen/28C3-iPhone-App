@@ -17,11 +17,17 @@
 {
     [super viewDidLoad];
     
-    [self.streamWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.call-a-nerd.de/28C3/streams.html"]]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"28c3_background_long"]];
+    streamWebView.opaque = NO;
+    streamWebView.backgroundColor = [UIColor clearColor];
+    [navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
     
-    // Do any additional setup after loading the view from its nib.
+  
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+      [self.streamWebView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:@"http://www.call-a-nerd.de/28C3/streams.html"]]];
+}
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
     if (error){
         UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"You need to be online to view the streams" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];

@@ -28,13 +28,12 @@
         NSString *filePath = [[NSBundle mainBundle] pathForResource:@"fahrplan.xml" ofType:nil];
         NSError *error;
         if(![fmngr copyItemAtPath:filePath toPath:[NSString stringWithFormat:@"%@/Documents/fahrplan.xml", NSHomeDirectory()] error:&error]) {
-            // handle the error
-            NSLog(@"Error creating the database: %@", [error description]);
-            
         }
         [fmngr release];
     }
     events = [[NSMutableArray alloc] init];
+    self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"28c3_tabbar"];
+
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:tabBarController.view];
     [self.window makeKeyAndVisible];

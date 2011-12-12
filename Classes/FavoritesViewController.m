@@ -39,6 +39,10 @@
     self.title = @"Favorites";
 
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
+    
+    self.tableView.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"28c3_background"]] autorelease];
+
 }
 
 - (void)viewDidUnload
@@ -122,14 +126,14 @@
 	if ([aEvent.track isEqualToString:@"Culture"]){
 		trackColor = [UIImage imageNamed:@"culture.png"];
 	}
-	else if ([aEvent.track isEqualToString:@"Society"]){
+	else if ([aEvent.track isEqualToString:@"Society and Politics"]){
 		trackColor = [UIImage imageNamed:@"society.png"];
 	}
 	else if ([aEvent.track isEqualToString:@"Hacking"]){
 		trackColor = [UIImage imageNamed:@"hacking.png"];
 	}
-	else if ([aEvent.track isEqualToString:@"Making"]){
-		trackColor = [UIImage imageNamed:@"making.png"];
+	else if ([aEvent.track isEqualToString:@"Show"]){
+		trackColor = [UIImage imageNamed:@"show.png"];
 	}
 	else if ([aEvent.track isEqualToString:@"Science"]){
 		trackColor = [UIImage imageNamed:@"science.png"];
@@ -142,9 +146,16 @@
 	cell.detailTextLabel.text = detailString;
 	cell.imageView.image = trackColor;
 	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-	cell.detailTextLabel.textColor = [UIColor colorWithWhite:1.000 alpha:1.000];
-	cell.textLabel.textColor = [UIColor colorWithRed:0.074 green:1.000 blue:0.001 alpha:1.000];
-	cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    
+    NSDate *now = [[NSDate alloc]init];
+    if ([aEvent.realDate compare:now] == NSOrderedAscending){
+        cell.textLabel.textColor = [UIColor darkGrayColor];
+    }
+    else {
+        cell.textLabel.textColor = [UIColor lightGrayColor];
+	}
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
+    cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha:1.000];
 	cell.textLabel.font = [UIFont fontWithName:@"Courier-Bold" size:15];
 	cell.detailTextLabel.font = [UIFont fontWithName:@"Courier" size:10];
     

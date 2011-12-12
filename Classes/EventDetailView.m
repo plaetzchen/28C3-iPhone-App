@@ -23,7 +23,9 @@
     [super viewDidLoad];
 
 	self.title = @"Details";
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)] autorelease];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"28c3_background"]];
 }
 
 
@@ -40,6 +42,8 @@
 	subtitleLabel.text = aEvent.subtitle;
 	abstractText.text = aEvent.abstract;
 	roomLabel.text = [@"Room: " stringByAppendingString:aEvent.room];
+    trackLabel.text = [@"Track: " stringByAppendingString:aEvent.track];
+
 	startLabel.text = [[@"Start: " stringByAppendingString:aEvent.start] stringByAppendingString:@"h"];
 	durationLabel.text = [[@"Duration: " stringByAppendingString:aEvent.duration] stringByAppendingString:@"h"];
 	idLabel.text = [@"Date: " stringByAppendingFormat:@"%@",aEvent.date];

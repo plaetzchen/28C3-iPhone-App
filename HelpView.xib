@@ -58,7 +58,7 @@
 						<string key="IBUIText">What's that?</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
+							<bytes key="NSRGB">MC41NzcwODc4MTk2IDAuNDA5NDY2NDc1MiAwLjA2NTI4NTMzMjUAA</bytes>
 						</object>
 						<object class="NSColor" key="IBUIHighlightedColor" id="207615798">
 							<int key="NSColorSpace">3</int>
@@ -98,7 +98,10 @@
 IDI4dGggQ2hhb3MgQ29tbXVuaWNhdGlvbiBDb25ncmVzcyBpbiBCZXJsaW4gKHNob3J0OiAyOEMzKS4K
 WW91IGNhbiBhZGQgZXZlbnRzIHRvIHlvdXIgY2FsZW5kYXIgYW5kIHNlZSBhbGwgdGhlIGRldGFpbHMg
 eW91IG5lZWQuA</string>
-						<reference key="IBUITextColor" ref="207615798"/>
+						<object class="NSColor" key="IBUITextColor" id="412255605">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MC42NjY2NjY2NjY3AA</bytes>
+						</object>
 						<object class="IBUITextInputTraits" key="IBUITextInputTraits">
 							<int key="IBUIAutocapitalizationType">2</int>
 							<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -128,9 +131,9 @@ eW91IG5lZWQuA</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">What does the colors mean?</string>
-						<object class="NSColor" key="IBUITextColor">
+						<object class="NSColor" key="IBUITextColor" id="415124646">
 							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
+							<bytes key="NSRGB">MC41NzcwODc4MTk2IDAuNDA5NDY2NDc1MiAwLjA2NTI4NTMzMjUAA</bytes>
 						</object>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -146,19 +149,14 @@ eW91IG5lZWQuA</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<reference key="NSWindow"/>
 						<reference key="NSNextKeyView" ref="962704701"/>
+						<reference key="IBUIBackgroundColor" ref="624167775"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">The colors show you the track of an event. They are:</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MSAxIDEAA</bytes>
-							<object class="NSColorSpace" key="NSCustomColorSpace" id="765388707">
-								<int key="NSID">1</int>
-							</object>
-						</object>
+						<reference key="IBUITextColor" ref="412255605"/>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -223,7 +221,7 @@ eW91IG5lZWQuA</string>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<object class="NSCustomResource" key="IBUIImage">
 							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">making.png</string>
+							<string key="NSResourceName">show.png</string>
 						</object>
 					</object>
 					<object class="IBUIImageView" id="807880045">
@@ -269,10 +267,7 @@ eW91IG5lZWQuA</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Community</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
-						</object>
+						<reference key="IBUITextColor" ref="415124646"/>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -292,10 +287,7 @@ eW91IG5lZWQuA</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Hacking</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
-						</object>
+						<reference key="IBUITextColor" ref="415124646"/>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -314,14 +306,11 @@ eW91IG5lZWQuA</string>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Society</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
-						</object>
+						<string key="IBUIText">Society &amp; Politics</string>
+						<reference key="IBUITextColor" ref="415124646"/>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
-						<float key="IBUIMinimumFontSize">10</float>
+						<float key="IBUIMinimumFontSize">8</float>
 						<reference key="IBUIFontDescription" ref="677236860"/>
 						<reference key="IBUIFont" ref="548903671"/>
 					</object>
@@ -337,11 +326,8 @@ eW91IG5lZWQuA</string>
 						<int key="IBUIContentMode">7</int>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Making</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
-						</object>
+						<string key="IBUIText">Show</string>
+						<reference key="IBUITextColor" ref="415124646"/>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -361,10 +347,7 @@ eW91IG5lZWQuA</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Science</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
-						</object>
+						<reference key="IBUITextColor" ref="415124646"/>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -384,10 +367,7 @@ eW91IG5lZWQuA</string>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Culture</string>
-						<object class="NSColor" key="IBUITextColor">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MCAxIDAuMDE2MDYyNjA4ODcAA</bytes>
-						</object>
+						<reference key="IBUITextColor" ref="415124646"/>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -410,7 +390,9 @@ eW91IG5lZWQuA</string>
 						<object class="NSColor" key="IBUITextColor">
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MSAxIDEAA</bytes>
-							<reference key="NSCustomColorSpace" ref="765388707"/>
+							<object class="NSColorSpace" key="NSCustomColorSpace">
+								<int key="NSID">1</int>
+							</object>
 						</object>
 						<reference key="IBUIHighlightedColor" ref="207615798"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -473,6 +455,14 @@ eW91IG5lZWQuA</string>
 						<reference key="destination" ref="191373211"/>
 					</object>
 					<int key="connectionID">3</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">navigationBar</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="681152443"/>
+					</object>
+					<int key="connectionID">23</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -693,7 +683,7 @@ eW91IG5lZWQuA</string>
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">22</int>
+			<int key="maxID">23</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -701,6 +691,17 @@ eW91IG5lZWQuA</string>
 				<object class="IBPartialClassDescription">
 					<string key="className">HelpView</string>
 					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="outlets">
+						<string key="NS.key.0">navigationBar</string>
+						<string key="NS.object.0">UINavigationBar</string>
+					</object>
+					<object class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<string key="NS.key.0">navigationBar</string>
+						<object class="IBToOneOutletInfo" key="NS.object.0">
+							<string key="name">navigationBar</string>
+							<string key="candidateClassName">UINavigationBar</string>
+						</object>
+					</object>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">./Classes/HelpView.h</string>
@@ -723,8 +724,8 @@ eW91IG5lZWQuA</string>
 				<string>community.png</string>
 				<string>culture.png</string>
 				<string>hacking.png</string>
-				<string>making.png</string>
 				<string>science.png</string>
+				<string>show.png</string>
 				<string>society.png</string>
 			</object>
 			<object class="NSMutableArray" key="dict.values">
