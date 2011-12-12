@@ -116,14 +116,24 @@
                 }
                 
                 BOOL isAlreadyFavorite = NO;
-                
+                BOOL favoriteAtSameTime = NO;
                 for (Event *favoriteEvent in favoritesArray) {
                     if (favoriteEvent.eventID == aEvent.eventID){
                         isAlreadyFavorite = YES;
                     }
+                    if ([favoriteEvent.realDate compare:aEvent.realDate] == NSOrderedSame){
+                        favoriteAtSameTime = YES;
+                    }
                 }
-                if (!isAlreadyFavorite)
+                if (!isAlreadyFavorite && ! favoriteAtSameTime)
                     [favoritesArray addObject:aEvent];
+                
+                if (favoriteAtSameTime && !isAlreadyFavorite) {
+                    UIAlertView *sameTimeAlert = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"You allready have a favorite at the same time, add it anyway?" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Yes", @"No", nil];
+                    [sameTimeAlert show];
+                    sameTimeAlert.tag = 2;
+                    [sameTimeAlert release];
+                }
                 
                 [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
                 [favoritesArray release];
@@ -208,6 +218,40 @@
     }
 }
 	
+#pragma mark -
+#pragma mark UIAlertViewDelegate
+
+-(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+    if (alertView.tag == 2){
+        switch (buttonIndex) {
+            case 0: {
+                NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
+                NSData *dataRepresentingSavedArray = [currentDefaults objectForKey:@"favorites"];
+                NSMutableArray *favoritesArray;
+                if (dataRepresentingSavedArray != nil)
+                {
+                    NSArray *oldSavedArray = [NSKeyedUnarchiver unarchiveObjectWithData:dataRepresentingSavedArray];
+                    if (oldSavedArray != nil)
+                        favoritesArray = [[NSMutableArray alloc] initWithArray:oldSavedArray];
+                    else
+                        favoritesArray = [[NSMutableArray alloc] init];
+                }
+                else {
+                    favoritesArray = [[NSMutableArray alloc] init];
+                }
+                
+                [favoritesArray addObject:aEvent];
+
+                [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
+                [favoritesArray release];
+                
+                break;
+            }
+            default:
+                break;
+        }
+    }
+}
 
 
 #pragma mark -
