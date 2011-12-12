@@ -44,7 +44,7 @@
                                                object:nil];
     
     loadingIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
-	loadingIndicator.center = CGPointMake(160, 240);
+	loadingIndicator.center = CGPointMake(160, 200);
 	loadingIndicator.hidesWhenStopped = YES;
 
     [self.view addSubview:loadingIndicator];
@@ -66,9 +66,7 @@
 
 - (void) recieveXMLNotification:(NSNotification *) notification
 {
-    // [notification name] should always be @"TestNotification"
-    // unless you use this method for observation of other notifications
-    // as well.
+
     
     if ([[notification name] isEqualToString:@"xmlParsed"]) {
         [loadingIndicator stopAnimating];
@@ -98,6 +96,7 @@
     [secondDayAfterMidnightArray removeAllObjects];
     [thirdDayAfterMidnightArray removeAllObjects];
     [fourthDayAfterMidnightArray removeAllObjects];
+    [self.tableView reloadData];
     [loadingIndicator startAnimating];
     [appDelegate loadXML];
 }
@@ -189,8 +188,11 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if (searching)
         return 1;
-    else
+    if (self.firstDayArray.count > 0)
         return 4;
+    else 
+        return 0;
+          
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
