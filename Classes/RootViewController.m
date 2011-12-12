@@ -337,9 +337,12 @@
 	
 	
 	
-	NSString *detailString = [[[@"Time: " stringByAppendingString:aEvent.start]stringByAppendingString:@" - Room: "]stringByAppendingString:aEvent.room];
+	NSString *detailString;
     if (searching) {
-        detailString = [[[[aEvent.date stringByAppendingString:@" - Time: "] stringByAppendingString:aEvent.start]stringByAppendingString:@" - Room: "]stringByAppendingString:aEvent.room];
+        detailString = [NSString stringWithFormat:@"%@ - Time: %@ - Room: %@",aEvent.date,aEvent.start,aEvent.room];
+    }
+    else{
+        detailString = [NSString stringWithFormat:@"Time: %@ - Room: %@",aEvent.start,aEvent.room];
     }
 	cell.textLabel.text = aEvent.title;
 	cell.detailTextLabel.text = detailString;
