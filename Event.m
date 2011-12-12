@@ -11,13 +11,14 @@
 
 @implementation Event
 
-@synthesize title, room, abstract, eventID, subtitle, start, duration,date,language,track,startDate,realDate;
+@synthesize title, room, abstract, description, eventID, subtitle, start, duration,date,language,track,startDate,realDate;
 
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
     [coder encodeObject:title forKey:@"title"];
     [coder encodeObject:room forKey:@"room"];
     [coder encodeObject:abstract forKey:@"abstract"];
+    [coder encodeObject:description forKey:@"description"];
     [coder encodeInteger:eventID forKey:@"eventID"]; 
     [coder encodeObject:subtitle forKey:@"subtitle"];
     [coder encodeObject:start forKey:@"start"]; 
@@ -38,6 +39,7 @@
         title = [[coder decodeObjectForKey:@"title"] retain];
         room = [[coder decodeObjectForKey:@"room"] retain];
         abstract = [[coder decodeObjectForKey:@"abstract"] retain];
+        description = [[coder decodeObjectForKey:@"description"] retain];
         subtitle = [[coder decodeObjectForKey:@"subtitle"] retain];
         start = [[coder decodeObjectForKey:@"start"] retain];
         duration = [[coder decodeObjectForKey:@"duration"] retain];
@@ -56,6 +58,7 @@
 - (void) dealloc {
 	
 	[abstract release];
+    [description release];
 	[subtitle release];
 	[start release];
 	[duration release];

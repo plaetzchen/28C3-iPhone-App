@@ -15,6 +15,7 @@
 	NSString *title;	//Same name as the Entity Name.
 	NSString *room;	//Same name as the Entity Name.
 	NSString *abstract;	//Same name as the Entity Name.
+    NSString *description;
 	NSString *subtitle;
 	NSString *start;
 	NSString *duration;
@@ -30,6 +31,7 @@
 @property (nonatomic, retain) NSString *title;
 @property (nonatomic, retain) NSString *room;
 @property (nonatomic, retain) NSString *abstract;
+@property (nonatomic, retain) NSString *description;
 @property (nonatomic, retain) NSString *subtitle;
 @property (nonatomic, retain) NSString *start;
 @property (nonatomic, retain) NSString *duration;
