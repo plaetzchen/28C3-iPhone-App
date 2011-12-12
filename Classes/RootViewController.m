@@ -347,7 +347,8 @@
 	cell.textLabel.text = aEvent.title;
 	cell.detailTextLabel.text = detailString;
 	cell.imageView.image = trackColor;
-	cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+	cell.accessoryType = UITableViewCellAccessoryNone;
+    cell.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"28c3_tableview_arrow"]]autorelease];
 	cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha:1.000];
 	cell.textLabel.textColor = [UIColor lightGrayColor];
 	cell.selectionStyle = UITableViewCellSelectionStyleGray;

@@ -114,9 +114,9 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Subtitle</string>
-						<object class="NSColor" key="IBUITextColor" id="506935790">
-							<int key="NSColorSpace">1</int>
-							<bytes key="NSRGB">MC4zMTM3MjU0OTAyIDAuMzEzNzI1NDkwMiAwLjMxMzcyNTQ5MDIAA</bytes>
+						<object class="NSColor" key="IBUITextColor" id="124403549">
+							<int key="NSColorSpace">3</int>
+							<bytes key="NSWhite">MC40MjU4MzgyNzU1AA</bytes>
 						</object>
 						<reference key="IBUIHighlightedColor" ref="776492907"/>
 						<int key="IBUIBaselineAdjustment">1</int>
@@ -148,7 +148,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Room</string>
-						<reference key="IBUITextColor" ref="506935790"/>
+						<reference key="IBUITextColor" ref="124403549"/>
 						<reference key="IBUIHighlightedColor" ref="776492907"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -178,7 +178,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Start</string>
-						<reference key="IBUITextColor" ref="506935790"/>
+						<reference key="IBUITextColor" ref="124403549"/>
 						<reference key="IBUIHighlightedColor" ref="776492907"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -200,7 +200,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Date</string>
-						<reference key="IBUITextColor" ref="506935790"/>
+						<reference key="IBUITextColor" ref="124403549"/>
 						<reference key="IBUIHighlightedColor" ref="776492907"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -221,7 +221,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Language</string>
-						<reference key="IBUITextColor" ref="506935790"/>
+						<reference key="IBUITextColor" ref="124403549"/>
 						<reference key="IBUIHighlightedColor" ref="776492907"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -242,7 +242,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Duration</string>
-						<reference key="IBUITextColor" ref="506935790"/>
+						<reference key="IBUITextColor" ref="124403549"/>
 						<reference key="IBUIHighlightedColor" ref="776492907"/>
 						<int key="IBUIBaselineAdjustment">1</int>
 						<float key="IBUIMinimumFontSize">10</float>
@@ -256,7 +256,6 @@
 						<string key="NSFrame">{{0, 145}, {320, 227}}</string>
 						<reference key="NSSuperview" ref="654992904"/>
 						<reference key="NSWindow"/>
-						<reference key="NSNextKeyView"/>
 						<reference key="IBUIBackgroundColor" ref="178125527"/>
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<bool key="IBUIMultipleTouchEnabled">YES</bool>
@@ -293,7 +292,7 @@
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
 						<string key="IBUIText">Track</string>
-						<reference key="IBUITextColor" ref="506935790"/>
+						<reference key="IBUITextColor" ref="124403549"/>
 						<reference key="IBUIHighlightedColor" ref="776492907"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<bool key="IBUIAdjustsFontSizeToFit">NO</bool>
