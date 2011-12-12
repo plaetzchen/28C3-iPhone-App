@@ -149,8 +149,7 @@
 	cell.accessoryType = UITableViewCellAccessoryNone;
     cell.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"28c3_tableview_arrow"]]autorelease];
     
-    NSDate *now = [[NSDate alloc]init];
-    if ([aEvent.realDate compare:now] == NSOrderedAscending){
+    if ([aEvent.realDate compare:[NSDate date]] == NSOrderedAscending){
         cell.textLabel.textColor = [UIColor darkGrayColor];
     }
     else {

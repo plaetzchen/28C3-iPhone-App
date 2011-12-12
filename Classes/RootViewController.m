@@ -254,6 +254,7 @@
     
     [view autorelease];
     [view addSubview:backgroundImage];
+    [backgroundImage release];
     [view addSubview:label];
     return view;
 }
