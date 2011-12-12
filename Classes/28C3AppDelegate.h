@@ -16,6 +16,8 @@
 	NSMutableArray *events;
     
     NSMutableData *fahrplanData;
+    
+    NSURLConnection *connection;
 
 }
 
