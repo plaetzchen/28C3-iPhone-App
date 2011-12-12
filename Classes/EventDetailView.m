@@ -117,11 +117,15 @@
                 
                 BOOL isAlreadyFavorite = NO;
                 BOOL favoriteAtSameTime = NO;
+                NSArray *durationArray = [aEvent.duration componentsSeparatedByString:@":"];
+                double hours = [[durationArray objectAtIndex:0] doubleValue] * 60 * 60;
+                double minutes = [[durationArray objectAtIndex:1] doubleValue] * 60;
+
                 for (Event *favoriteEvent in favoritesArray) {
                     if (favoriteEvent.eventID == aEvent.eventID){
                         isAlreadyFavorite = YES;
                     }
-                    if ([favoriteEvent.realDate compare:aEvent.realDate] == NSOrderedSame){
+                    if ([self date:aEvent.realDate isBetweenDate:favoriteEvent.realDate andDate:[NSDate dateWithTimeInterval:hours+minutes sinceDate:favoriteEvent.realDate]]){
                         favoriteAtSameTime = YES;
                     }
                 }
@@ -134,7 +138,6 @@
                     sameTimeAlert.tag = 2;
                     [sameTimeAlert release];
                 }
-                
                 [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
                 [favoritesArray release];
                 break;
@@ -216,6 +219,16 @@
         }			
                 
     }
+}
+
+- (BOOL) date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate {
+    if ([date compare:beginDate] == NSOrderedAscending)
+        return NO;
+    
+    if ([date compare:endDate] == NSOrderedDescending) 
+        return NO;
+    
+    return YES;
 }
 	
 #pragma mark -

@@ -38,7 +38,7 @@
 @property (nonatomic) BOOL fromFavorites;
 
 -(IBAction)actionButtonPressed:(id)sender;
-
+- (BOOL) date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;
 
 
 @end
