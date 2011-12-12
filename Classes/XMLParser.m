@@ -13,11 +13,8 @@
 @implementation XMLParser
 
 - (XMLParser *) initXMLParser {
-	
-	[super init];
-	
+	self = [super init];
 	appDelegate = (Fahrplan28C3AppDelegate *)[[UIApplication sharedApplication] delegate];
-	
 	return self;
 }
 
@@ -26,13 +23,11 @@
 	attributes:(NSDictionary *)attributeDict {
 	
 	if([elementName isEqualToString:@"schedule"]) {
-		//Initialize the array.
-		appDelegate.events = [[NSMutableArray alloc] init];
+		//Empty the array.
+        [appDelegate.events removeAllObjects];
 	}
 	else if([elementName isEqualToString:@"day"]){
-		
 		tempString = [attributeDict objectForKey:@"date"];
-		
 	}
 	else if([elementName isEqualToString:@"event"]) {
 		
@@ -55,10 +50,7 @@
 		currentElementValue = [[NSMutableString alloc] initWithString:string];
 	}
 	else{
-			[currentElementValue appendString:string];
-		
-
-
+        [currentElementValue appendString:string];
 	}
 	
 	//NSLog(@"Processing Value: %@", currentElementValue);
@@ -76,7 +68,6 @@
 	// and release the object.
 	if([elementName isEqualToString:@"event"]) {
 		[appDelegate.events addObject:aEvent];
-		
 		[aEvent release];
 		aEvent = nil;
 	}
@@ -135,7 +126,6 @@
 }
 
 - (void) dealloc {
-	
 	[aEvent release];
 	[currentElementValue release];
 	[super dealloc];

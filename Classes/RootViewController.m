@@ -67,6 +67,8 @@
     
     if ([[notification name] isEqualToString:@"xmlParsed"]) {
         [loadingIndicator stopAnimating];
+        [self.navigationItem.rightBarButtonItem setEnabled:YES];
+        self.navigationItem.rightBarButtonItem.action = @selector(reloadTheXML);
         [self organizeTheData];
     }
 }
@@ -81,6 +83,8 @@
 }
 
 - (void)reloadTheXML {
+    [self.navigationItem.rightBarButtonItem setEnabled:NO];
+    self.navigationItem.rightBarButtonItem.action = nil;
     [firstDayArray removeAllObjects];
     [secondDayArray removeAllObjects];
     [thirdDayArray removeAllObjects];
@@ -299,6 +303,8 @@
             case 3:
                 aEvent = [self.fourthDayArray objectAtIndex:indexPath.row];
                 break;
+            default:
+                return nil;
                 
         }
     }
@@ -383,6 +389,8 @@
             case 3:
                 aEvent = [self.fourthDayArray objectAtIndex:indexPath.row];
                 break;
+            default:
+                aEvent = nil;
                 
         }
 	}
@@ -484,14 +492,14 @@
 
 
 - (void)dealloc {
-	[self.firstDayArray release];
-	[self.secondDayArray release];
-	[self.thirdDayArray release];
-	[self.fourthDayArray release];
-    [self.firstDayAfterMidnightArray release];
-	[self.secondDayAfterMidnightArray release];
-	[self.thirdDayAfterMidnightArray release];
-	[self.fourthDayAfterMidnightArray release];
+	[firstDayArray release];
+	[secondDayArray release];
+	[thirdDayArray release];
+	[fourthDayArray release];
+    [firstDayAfterMidnightArray release];
+	[secondDayAfterMidnightArray release];
+	[thirdDayAfterMidnightArray release];
+	[fourthDayAfterMidnightArray release];
 	[appDelegate release];
     [super dealloc];
 }

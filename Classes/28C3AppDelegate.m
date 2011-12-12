@@ -34,6 +34,7 @@
         }
         [fmngr release];
     }
+    events = [[NSMutableArray alloc] init];
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:tabBarController.view];
     [self.window makeKeyAndVisible];
@@ -73,21 +74,19 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection 
 {
     NSLog(@"Succeeded! Received %d bytes of data",[fahrplanData length]);
-    NSString *txt = [[[NSString alloc] initWithData:fahrplanData encoding: NSUTF8StringEncoding] autorelease];
-    
+    NSString *txt = [[NSString alloc] initWithData:fahrplanData encoding: NSUTF8StringEncoding];
+
     NSArray *paths = NSSearchPathForDirectoriesInDomains
     (NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentsDirectory = [paths objectAtIndex:0];
     
-    NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", 
-                          documentsDirectory];
+    NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", documentsDirectory];
    
     NSFileManager *fm = [NSFileManager defaultManager];
     [fm removeItemAtPath:fileName error:nil];
     [txt writeToFile:fileName atomically:NO encoding:NSUTF8StringEncoding error:nil];
+    [txt release];
     [self parseXML];
-
-    
 }
 
 -(void)parseXML {
@@ -101,30 +100,29 @@
     
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL fileURLWithPath:fileName]];
 
-		//Initialize the delegate.
-		XMLParser *parser = [[XMLParser alloc] initXMLParser];
+    //Initialize the delegate.
+    XMLParser *parser = [[XMLParser alloc] initXMLParser];
         
-		//Set delegate
-		[xmlParser setDelegate:parser];
+    //Set delegate
+    [xmlParser setDelegate:parser];
         
-		//Start parsing the XML file.
-		BOOL success = [xmlParser parse];
+    //Start parsing the XML file.
+    BOOL success = [xmlParser parse];
         
     if(success){
         NSLog(@"No Errors");
         
         NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
         NSData *dataRepresentingSavedArray = [currentDefaults objectForKey:@"favorites"];
-        NSMutableArray *favoritesArray;
+        NSMutableArray *favoritesArray = [[NSMutableArray alloc] init];
         if (dataRepresentingSavedArray != nil)
         {
             NSArray *oldSavedArray = [NSKeyedUnarchiver unarchiveObjectWithData:dataRepresentingSavedArray];
-            if (oldSavedArray != nil)
-                favoritesArray = [[NSMutableArray alloc] initWithArray:oldSavedArray];
-            else
-                favoritesArray = [[NSMutableArray alloc] init];
+            if (oldSavedArray != nil){
+                [favoritesArray setArray:oldSavedArray];
+            }
         }
-        
+
         for (int i=0; i < favoritesArray.count; i++){
             Event *savedEvent = [favoritesArray objectAtIndex:i];
             for (int j=0;j < self.events.count;j++){
@@ -134,14 +132,14 @@
                 }
             }
         }
-        
         [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
         [[NSUserDefaults standardUserDefaults]synchronize];
-        
+        [favoritesArray release];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"xmlParsed" object:self];
     }
-		else
-			NSLog(@"Error parsing xml");
+    else{
+        NSLog(@"Error parsing xml");
+    }
     [parser release];
 }
 
