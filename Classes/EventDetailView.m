@@ -64,7 +64,9 @@
     [scrollView setContentSize:CGSizeMake(self.view.frame.size.width, abstractText.frame.size.height+image.frame.size.height)];
 }
 
-
+- (void)viewDidAppear:(BOOL)animated {
+    [scrollView setContentOffset:CGPointMake(0, 0) animated:YES]; 
+}
 
 -(IBAction)actionButtonPressed:(id)sender{
 	UIActionSheet *actionSheet;
