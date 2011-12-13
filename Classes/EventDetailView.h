@@ -28,10 +28,8 @@
 	IBOutlet UILabel *idLabel;
 	IBOutlet UILabel *languageLabel;	
     IBOutlet UILabel *trackLabel;
-
-	
-	
-
+    IBOutlet UIScrollView *scrollView;
+    IBOutlet UIImageView *image;
 }
 
 @property (nonatomic, retain) Event *aEvent;

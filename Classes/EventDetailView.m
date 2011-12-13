@@ -56,6 +56,12 @@
 				 
 	languageLabel.text = [@"Language: " stringByAppendingString:theLanguage];
 
+    CGRect frame = abstractText.frame;
+    frame.size.height =  abstractText.contentSize.height;
+    abstractText.frame = frame;
+    abstractText.contentInset = UIEdgeInsetsZero;
+    abstractText.contentOffset = CGPointMake(0, 0);
+    [scrollView setContentSize:CGSizeMake(self.view.frame.size.width, abstractText.frame.size.height+image.frame.size.height)];
 }
 
 
@@ -278,6 +284,10 @@
 }
 
 - (void)viewDidUnload {
+    [image release];
+    image = nil;
+    [scrollView release];
+    scrollView = nil;
     // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
     // For example: self.myOutlet = nil;
 }
@@ -285,6 +295,8 @@
 
 - (void)dealloc {
 	[aEvent release];
+    [scrollView release];
+    [image release];
     [super dealloc];
 }
 
