@@ -67,7 +67,6 @@
 }
 
 - (void)webView:(UIWebView *)wv didFailLoadWithError:(NSError *)error {
-    NSLog (@"webView:didFailLoadWithError");
     if (error != NULL) {
         UIAlertView *errorAlert = [[UIAlertView alloc]
 								   initWithTitle: [error localizedDescription]

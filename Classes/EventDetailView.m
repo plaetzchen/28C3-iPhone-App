@@ -101,7 +101,6 @@
     if (!fromFavorites) {
         switch (buttonIndex) {
             case 0:
-                NSLog(@"Web");
                 if(wvController == nil)
                     wvController = [[WebView alloc] initWithNibName:@"WebView" bundle:[NSBundle mainBundle]];
                 
@@ -189,7 +188,6 @@
     else {
         switch (buttonIndex) {
             case 0:
-                NSLog(@"Web");
                 if(wvController == nil)
                     wvController = [[WebView alloc] initWithNibName:@"WebView" bundle:[NSBundle mainBundle]];
                 
@@ -254,8 +252,7 @@
                 [favoritesArray release];
                 
                 break;
-            case 2:
-                NSLog(@"Event");
+            case 2: {
                 EKEventStore *eventStore = [[EKEventStore alloc] init];
                 
                 EKEvent *event  = [EKEvent eventWithEventStore:eventStore];
@@ -282,6 +279,7 @@
                     [dateAlert release];
                 }
                 break;
+            }
         }			
                 
     }

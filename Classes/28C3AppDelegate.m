@@ -72,7 +72,7 @@
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection_ 
 {
-    NSLog(@"Succeeded! Received %d bytes of data",[fahrplanData length]);
+    //NSLog(@"Succeeded! Received %d bytes of data",[fahrplanData length]);
     NSString *txt = [[NSString alloc] initWithData:fahrplanData encoding: NSUTF8StringEncoding];
 
     NSArray *paths = NSSearchPathForDirectoriesInDomains
@@ -112,7 +112,7 @@
     BOOL success = [xmlParser parse];
         
     if(success){
-        NSLog(@"No Errors");
+        //NSLog(@"No Errors");
         
         NSString *savedVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"currentFahrplanVersion"];
         
@@ -143,8 +143,6 @@
             }
             for (int i=0; i < favoritesArray.count; i++){
                 Event *savedEvent = [favoritesArray objectAtIndex:i];
-                NSLog (@"Saved Event: %@",savedEvent.title);
-                NSLog (@"Reminder? %@",(savedEvent.reminderSet ? @"YES" : @"NO"));
                        
                 for (int j=0;j < self.events.count;j++){
                     Event *newEvent = [self.events objectAtIndex:j];
