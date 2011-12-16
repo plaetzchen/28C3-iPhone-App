@@ -18,6 +18,7 @@
     NSMutableData *fahrplanData;
     
     NSURLConnection *connection;
+    NSXMLParser *xmlParser;
     
     BOOL usingOfflineData;
     BOOL newFahrplanVersion;

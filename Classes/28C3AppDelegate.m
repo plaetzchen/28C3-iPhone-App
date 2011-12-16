@@ -100,7 +100,7 @@
     NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", 
                           documentsDirectory];
     
-    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL fileURLWithPath:fileName]];
+    xmlParser = [[NSXMLParser alloc] initWithContentsOfURL:[NSURL fileURLWithPath:fileName]];
 
     //Initialize the delegate.
     XMLParser *parser = [[XMLParser alloc] initXMLParser];
@@ -192,6 +192,7 @@
         NSLog(@"Error parsing xml");
     }
     [parser release];
+    [xmlParser release];
 }
 
 
