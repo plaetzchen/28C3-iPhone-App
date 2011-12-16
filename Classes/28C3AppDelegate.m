@@ -64,9 +64,8 @@
 
 - (void)connection:(NSURLConnection *)connection_ didFailWithError:(NSError *)error {
     [fahrplanData release];
-    UIAlertView *offlineAlert = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"Could not update data. Using last cached data!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
-    [offlineAlert show];
-    [offlineAlert release];
+    usingOfflineData = YES;
+    
     [self parseXML];
 }
 
@@ -87,6 +86,7 @@
     [txt release];
     [connection release];
     connection = nil;
+    usingOfflineData = NO;
     [self parseXML];
 }
 
@@ -137,6 +137,12 @@
         [[NSUserDefaults standardUserDefaults]synchronize];
         [favoritesArray release];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"xmlParsed" object:self];
+        
+        if (usingOfflineData){
+            UIAlertView *offlineAlert = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"Could not update data. Using last cached data!" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            [offlineAlert show];
+            [offlineAlert release];
+        }
     }
     else{
         NSLog(@"Error parsing xml");

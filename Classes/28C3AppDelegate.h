@@ -18,6 +18,8 @@
     NSMutableData *fahrplanData;
     
     NSURLConnection *connection;
+    
+    BOOL usingOfflineData;
 
 }
 
