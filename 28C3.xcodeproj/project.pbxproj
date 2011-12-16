@@ -417,6 +417,7 @@
 					armv6,
 					armv7,
 				);
+				CODE_SIGN_ENTITLEMENTS = 28C3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -438,6 +439,7 @@
 					armv6,
 					armv7,
 				);
+				CODE_SIGN_ENTITLEMENTS = 28C3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Philip Brechler";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Philip Brechler";
 				COPY_PHASE_STRIP = YES;
@@ -474,6 +476,7 @@
 					armv6,
 					armv7,
 				);
+				CODE_SIGN_ENTITLEMENTS = 28C3.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Philip Brechler";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
