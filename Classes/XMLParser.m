@@ -71,6 +71,10 @@
 		[aEvent release];
 		aEvent = nil;
 	}
+    else if ([elementName isEqualToString:@"release"]){
+        [[NSUserDefaults standardUserDefaults] setObject:currentElementValue forKey:@"newFahrplanVersion"];
+        [[NSUserDefaults standardUserDefaults]synchronize];
+    }
 	else {
 		NSString *cleanerString = [currentElementValue stringByReplacingOccurrencesOfString:@"\n" withString:@""];
 		NSString *theCleanestString = [cleanerString stringByReplacingOccurrencesOfString:@"\r" withString:@""];

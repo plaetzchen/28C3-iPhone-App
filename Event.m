@@ -11,7 +11,7 @@
 
 @implementation Event
 
-@synthesize title, room, abstract, description, eventID, subtitle, start, duration,date,language,track,startDate,realDate;
+@synthesize title, room, abstract, description, eventID, subtitle, start, duration,date,language,track,startDate,realDate,reminderSet;
 
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
@@ -28,28 +28,29 @@
     [coder encodeObject:track forKey:@"track"];
     [coder encodeObject:startDate forKey:@"startDate"];
     [coder encodeObject:realDate forKey:@"realDate"];
+    [coder encodeBool:reminderSet forKey:@"reminderSet"];
 
 }
 
 - (id)initWithCoder:(NSCoder *)coder;
 {
-    self = [[Event alloc] init];
-    if (self != nil)
+    if (self = [super init])
     {
-        title = [[coder decodeObjectForKey:@"title"] retain];
-        room = [[coder decodeObjectForKey:@"room"] retain];
-        abstract = [[coder decodeObjectForKey:@"abstract"] retain];
-        description = [[coder decodeObjectForKey:@"description"] retain];
-        subtitle = [[coder decodeObjectForKey:@"subtitle"] retain];
-        start = [[coder decodeObjectForKey:@"start"] retain];
-        duration = [[coder decodeObjectForKey:@"duration"] retain];
-        date = [[coder decodeObjectForKey:@"date"] retain];
-        language = [[coder decodeObjectForKey:@"language"] retain];
-        track = [[coder decodeObjectForKey:@"track"] retain];
-        startDate = [[coder decodeObjectForKey:@"startDate"] retain];
-        realDate = [[coder decodeObjectForKey:@"realDate"] retain];
+        self.title = [coder decodeObjectForKey:@"title"];
+        self.room = [coder decodeObjectForKey:@"room"];
+        self.abstract = [coder decodeObjectForKey:@"abstract"];
+        self.description = [coder decodeObjectForKey:@"description"];
+        self.subtitle = [coder decodeObjectForKey:@"subtitle"];
+        self.start = [coder decodeObjectForKey:@"start"];
+        self.duration = [coder decodeObjectForKey:@"duration"];
+        self.date = [coder decodeObjectForKey:@"date"];
+        self.language = [coder decodeObjectForKey:@"language"];
+        self.track = [coder decodeObjectForKey:@"track"];
+        self.startDate = [coder decodeObjectForKey:@"startDate"];
+        self.realDate = [coder decodeObjectForKey:@"realDate"];
+        self.reminderSet = [coder decodeBoolForKey:@"reminderSet"];
 
-        eventID = [coder decodeIntegerForKey:@"eventID"];
+        self.eventID = [coder decodeIntegerForKey:@"eventID"];
     }   
     return self;
 }

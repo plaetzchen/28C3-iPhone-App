@@ -49,6 +49,7 @@
 -(void)loadXML {
     if (connection == nil) {
         NSURL *myURL = [NSURL URLWithString:@"http://events.ccc.de/congress/2011/Fahrplan/schedule.en.xml"];
+                
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:myURL cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
         connection = [[NSURLConnection alloc] initWithRequest:request delegate:self];
     }
@@ -113,29 +114,72 @@
     if(success){
         NSLog(@"No Errors");
         
-        NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
-        NSData *dataRepresentingSavedArray = [currentDefaults objectForKey:@"favorites"];
-        NSMutableArray *favoritesArray = [[NSMutableArray alloc] init];
-        if (dataRepresentingSavedArray != nil)
-        {
-            NSArray *oldSavedArray = [NSKeyedUnarchiver unarchiveObjectWithData:dataRepresentingSavedArray];
-            if (oldSavedArray != nil){
-                [favoritesArray setArray:oldSavedArray];
-            }
+        NSString *savedVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"currentFahrplanVersion"];
+        
+        NSString *newVersion = [[NSUserDefaults standardUserDefaults] stringForKey:@"newFahrplanVersion"];
+        
+        if (![savedVersion isEqualToString:newVersion]){
+            newFahrplanVersion = YES;
         }
-
-        for (int i=0; i < favoritesArray.count; i++){
-            Event *savedEvent = [favoritesArray objectAtIndex:i];
-            for (int j=0;j < self.events.count;j++){
-                Event *newEvent = [self.events objectAtIndex:j];
-                if (savedEvent.eventID == newEvent.eventID){
-                    [favoritesArray replaceObjectAtIndex:i withObject:newEvent];
+        else {
+            newFahrplanVersion = NO;
+        }
+        
+        [[NSUserDefaults standardUserDefaults]setObject:newVersion forKey:@"currentFahrplanVersion"];
+        
+        if (newFahrplanVersion){
+            NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
+            NSData *dataRepresentingSavedArray = [currentDefaults objectForKey:@"favorites"];
+            NSMutableArray *favoritesArray = [[NSMutableArray alloc] init];
+            
+            [[UIApplication sharedApplication] cancelAllLocalNotifications];
+            
+            if (dataRepresentingSavedArray != nil)
+            {
+                NSArray *oldSavedArray = [NSKeyedUnarchiver unarchiveObjectWithData:dataRepresentingSavedArray];
+                if (oldSavedArray != nil){
+                    [favoritesArray setArray:oldSavedArray];
                 }
             }
+            for (int i=0; i < favoritesArray.count; i++){
+                Event *savedEvent = [favoritesArray objectAtIndex:i];
+                NSLog (@"Saved Event: %@",savedEvent.title);
+                NSLog (@"Reminder? %@",(savedEvent.reminderSet ? @"YES" : @"NO"));
+                       
+                for (int j=0;j < self.events.count;j++){
+                    Event *newEvent = [self.events objectAtIndex:j];
+                    if (savedEvent.eventID == newEvent.eventID){
+                        if (savedEvent.reminderSet){
+                            UILocalNotification *reminder = [[UILocalNotification alloc]init];
+                            reminder.fireDate = [NSDate dateWithTimeInterval:-900 sinceDate:newEvent.realDate];
+                            reminder.timeZone = [NSTimeZone timeZoneWithName:@"Europe/Berlin"];
+                            reminder.alertBody = [NSString stringWithFormat:@"Your favorite event %@ will start in 15 minutes",newEvent.title];
+                            reminder.alertAction = @"Open";
+                            reminder.soundName = @"scifi.caf";
+                            reminder.applicationIconBadgeNumber = 1;
+                            NSDictionary *userDict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:newEvent.eventID] forKey:@"28C3Reminder"];
+                            reminder.userInfo = userDict;
+                            [[UIApplication sharedApplication] scheduleLocalNotification:reminder];
+                            [reminder release];
+                        }
+                        newEvent.reminderSet = savedEvent.reminderSet;
+                        [favoritesArray replaceObjectAtIndex:i withObject:newEvent];
+                    }
+                }
+            }
+            [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
+            [[NSUserDefaults standardUserDefaults]synchronize];
+            [favoritesArray release];
+            
+            
+            NSString *messageString = [NSString stringWithFormat:@"The Fahrplan was updated to %@. We updated your reminders and favorites.",newVersion];
+            
+            UIAlertView *newVersionAlert = [[UIAlertView alloc]initWithTitle:@"New Version" message:messageString delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+            
+            [newVersionAlert show];
+            [newVersionAlert release];
         }
-        [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
-        [[NSUserDefaults standardUserDefaults]synchronize];
-        [favoritesArray release];
+        
         [[NSNotificationCenter defaultCenter] postNotificationName:@"xmlParsed" object:self];
         
         if (usingOfflineData){

@@ -25,6 +25,8 @@
     
     NSDate *startDate;
     NSDate *realDate;
+    
+    BOOL reminderSet;
 }
 
 @property (nonatomic, readwrite) NSInteger eventID;
@@ -40,5 +42,6 @@
 @property (nonatomic, retain) NSString *track;
 @property (nonatomic, retain) NSDate *startDate;
 @property (nonatomic, retain) NSDate *realDate;
+@property (nonatomic) BOOL reminderSet;
 
 @end

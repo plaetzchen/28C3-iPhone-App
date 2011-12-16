@@ -20,6 +20,7 @@
     NSURLConnection *connection;
     
     BOOL usingOfflineData;
+    BOOL newFahrplanVersion;
 
 }
 

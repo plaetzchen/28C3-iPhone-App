@@ -73,12 +73,18 @@
     
     if (!fromFavorites){
     
-    actionSheet = [[UIActionSheet alloc] initWithTitle:nil
-															 delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"View in Web",@"Add to favorites",@"Add to calendar",nil,nil];
+            actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+															 delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"View in Web",@"Add to favorites",@"Add to calendar",nil];
     }
     else {
-        actionSheet = [[UIActionSheet alloc] initWithTitle:nil
-                                                  delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"View in Web",@"Add to calendar",nil,nil];
+        if (aEvent.reminderSet){
+            actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+                                                      delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"View in Web",@"Remove reminder",@"Add to calendar",nil];
+        }
+        else {
+            actionSheet = [[UIActionSheet alloc] initWithTitle:nil
+                                                      delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"View in Web",@"Set reminder",@"Add to calendar",nil];
+        }
     }
     actionSheet.actionSheetStyle = UIActionSheetStyleBlackOpaque;
 	actionSheet.tag=1;
@@ -150,8 +156,7 @@
                 [favoritesArray release];
                 break;
             }
-                
-            case 2: {
+        case 2: {
                 EKEventStore *eventStore = [[EKEventStore alloc] init];
                 
                 EKEvent *event  = [EKEvent eventWithEventStore:eventStore];
@@ -196,7 +201,60 @@
                 [self.navigationController pushViewController:wvController animated:YES];
 
                 break;
+                
             case 1:
+                if (aEvent.reminderSet){
+                    for (UILocalNotification *notification in [[UIApplication sharedApplication] scheduledLocalNotifications]){
+                        NSDictionary *userInfo = notification.userInfo;
+                        NSNumber *version =  [userInfo objectForKey:@"28C3Reminder"];
+                        if ([version isEqualToNumber:[NSNumber numberWithInt:aEvent.eventID]]){
+                            [[UIApplication sharedApplication] cancelLocalNotification:notification];
+                        }
+                    }
+                    aEvent.reminderSet = NO;
+                }
+                else {
+                    UILocalNotification *reminder = [[UILocalNotification alloc]init];
+                    reminder.fireDate = [NSDate dateWithTimeInterval:-900 sinceDate:aEvent.realDate];
+                    reminder.timeZone = [NSTimeZone timeZoneWithName:@"Europe/Berlin"];
+                    reminder.alertBody = [NSString stringWithFormat:@"Your favorite event %@ will start in 15 minutes",aEvent.title];
+                    reminder.alertAction = @"Open";
+                    reminder.soundName = @"scifi.caf";
+                    reminder.applicationIconBadgeNumber = 1;
+                    NSDictionary *userDict = [NSDictionary dictionaryWithObject:[NSNumber numberWithInt:aEvent.eventID] forKey:@"28C3Reminder"];
+                    reminder.userInfo = userDict;
+                    [[UIApplication sharedApplication] scheduleLocalNotification:reminder];
+                    [reminder release];
+                    
+                    UIAlertView *reminderAlert = [[UIAlertView alloc]initWithTitle:@"Reminder set" message:@"We will buzz your phone 15 minutes before the event" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+                    [reminderAlert show];
+                    [reminderAlert release];
+                    aEvent.reminderSet = YES;
+                }
+                
+                NSUserDefaults *currentDefaults = [NSUserDefaults standardUserDefaults];
+                NSData *dataRepresentingSavedArray = [currentDefaults objectForKey:@"favorites"];
+                NSMutableArray *favoritesArray = [[NSMutableArray alloc] init];
+                                
+                if (dataRepresentingSavedArray != nil)
+                {
+                    NSArray *oldSavedArray = [NSKeyedUnarchiver unarchiveObjectWithData:dataRepresentingSavedArray];
+                    if (oldSavedArray != nil){
+                        [favoritesArray setArray:oldSavedArray];
+                    }
+                }
+                for (int i=0; i < favoritesArray.count; i++){
+                    Event *savedEvent = [favoritesArray objectAtIndex:i];
+                    if (savedEvent.eventID == aEvent.eventID){
+                        [favoritesArray replaceObjectAtIndex:i withObject:aEvent];
+                    }
+                }
+                [[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:favoritesArray] forKey:@"favorites"];
+                [[NSUserDefaults standardUserDefaults]synchronize];
+                [favoritesArray release];
+                
+                break;
+            case 2:
                 NSLog(@"Event");
                 EKEventStore *eventStore = [[EKEventStore alloc] init];
                 
