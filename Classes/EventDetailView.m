@@ -23,7 +23,10 @@
     [super viewDidLoad];
 
 	self.title = @"Details";
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
+    if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:)]) {
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
+    }
+    
     self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:self action:@selector(actionButtonPressed:)] autorelease];
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"28c3_background"]];
 }

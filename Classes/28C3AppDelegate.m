@@ -33,7 +33,9 @@
         [fmngr release];
     }
     events = [[NSMutableArray alloc] init];
-    self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"28c3_tabbar"];
+    if ([self.tabBarController.tabBar respondsToSelector:@selector(setBackgroundImage:)]) {
+        self.tabBarController.tabBar.backgroundImage = [UIImage imageNamed:@"28c3_tabbar"];
+    }
 
     // Add the navigation controller's view to the window and display.
     [self.window addSubview:tabBarController.view];

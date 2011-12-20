@@ -39,7 +39,9 @@
     self.title = @"Favorites";
 
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
+    if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:)]) {
+        [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
+    }
     
     self.tableView.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"28c3_background"]] autorelease];
 
