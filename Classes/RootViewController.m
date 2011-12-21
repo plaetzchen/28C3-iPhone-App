@@ -55,7 +55,7 @@
     searchBar.tintColor = [UIColor blackColor];
     searchBar.backgroundImage = [UIImage imageNamed:@"28c3_navbar"];
 
-    if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:)]) {
+    if ([self.navigationController.navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]) {
         [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
         }
     

@@ -20,7 +20,7 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"28c3_background_long"]];
     streamWebView.opaque = NO;
     streamWebView.backgroundColor = [UIColor clearColor];
-    if([navigationBar respondsToSelector:@selector(setBackgroundImage:)]){
+    if([navigationBar respondsToSelector:@selector(setBackgroundImage:forBarMetrics:)]){
         [navigationBar setBackgroundImage:[UIImage imageNamed:@"28c3_navbar"] forBarMetrics:UIBarMetricsDefault];
     }
   
