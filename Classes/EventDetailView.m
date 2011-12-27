@@ -149,7 +149,7 @@
                     [favoritesArray addObject:aEvent];
                 
                 if (favoriteAtSameTime && !isAlreadyFavorite) {
-                    UIAlertView *sameTimeAlert = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"You allready have a favorite at the same time, add it anyway?" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Yes", @"No", nil];
+                    UIAlertView *sameTimeAlert = [[UIAlertView alloc]initWithTitle:@"Warning" message:@"You already have a favorite at the same time, add it anyway?" delegate:self cancelButtonTitle:nil otherButtonTitles:@"Yes", @"No", nil];
                     [sameTimeAlert show];
                     sameTimeAlert.tag = 2;
                     [sameTimeAlert release];
