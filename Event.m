@@ -55,6 +55,14 @@
     return self;
 }
 
+- (BOOL)isAtDate:(NSDate *)_date {
+    NSArray *durationArray = [self.duration componentsSeparatedByString:@":"];
+    double hours = [[durationArray objectAtIndex:0] doubleValue] * 60 * 60;
+    double minutes = [[durationArray objectAtIndex:1] doubleValue] * 60;
+    NSDate * endDate = [NSDate dateWithTimeInterval:hours+minutes sinceDate:self.startDate];
+    
+    return [_date compare:self.startDate] == NSOrderedDescending  && [_date compare:endDate] == NSOrderedAscending;
+}
 
 - (void) dealloc {
 	
