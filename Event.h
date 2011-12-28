@@ -43,5 +43,6 @@
 @property (nonatomic, retain) NSDate *startDate;
 @property (nonatomic, retain) NSDate *realDate;
 @property (nonatomic) BOOL reminderSet;
+- (BOOL)isAtDate:(NSDate *)_date;
 
 @end
