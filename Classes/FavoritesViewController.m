@@ -81,6 +81,8 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    // Better call periodically, to update "now" indicator 
+    [self.tableView reloadData];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -149,8 +151,10 @@
 	cell.detailTextLabel.text = detailString;
 	cell.imageView.image = trackColor;
 	cell.accessoryType = UITableViewCellAccessoryNone;
-    cell.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"28c3_tableview_arrow"]]autorelease];
     
+    NSString * backgroundImageName = [aEvent isAtDate:[NSDate date]] ? @"28c3_tableview_arrow_now" : @"28c3_tableview_arrow";
+    
+    cell.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:backgroundImageName]]autorelease];
     if ([aEvent.realDate compare:[NSDate date]] == NSOrderedAscending){
         cell.textLabel.textColor = [UIColor darkGrayColor];
     }

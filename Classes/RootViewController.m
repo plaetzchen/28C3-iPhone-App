@@ -65,6 +65,11 @@
     letUserSelectRow = YES;
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    // Better call periodically, to update "now" indicator 
+    [self.tableView reloadData];
+}
 
 - (void) recieveXMLNotification:(NSNotification *) notification
 {
@@ -102,6 +107,7 @@
     [loadingIndicator startAnimating];
     [appDelegate loadXML];
 }
+
 
 -(void)organizeTheData{
 
@@ -351,7 +357,12 @@
 	cell.detailTextLabel.text = detailString;
 	cell.imageView.image = trackColor;
 	cell.accessoryType = UITableViewCellAccessoryNone;
-    cell.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"28c3_tableview_arrow"]]autorelease];
+    
+    NSString * backgroundImageName = [aEvent isAtDate:[NSDate date]] ? @"28c3_tableview_arrow_now" : @"28c3_tableview_arrow";
+    
+    cell.backgroundView = [[[UIImageView alloc]initWithImage:[UIImage imageNamed:backgroundImageName]]autorelease];
+    
+
 	cell.detailTextLabel.textColor = [UIColor colorWithWhite:0.5 alpha:1.000];
 	cell.textLabel.textColor = [UIColor lightGrayColor];
 	cell.selectionStyle = UITableViewCellSelectionStyleGray;
