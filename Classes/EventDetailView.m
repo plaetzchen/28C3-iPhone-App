@@ -43,6 +43,7 @@
 	
 	titleLabel.text = aEvent.title;
 	subtitleLabel.text = aEvent.subtitle;
+    speakerLabel.text = aEvent.speaker;
 	abstractText.text = ([aEvent.abstract length] > [aEvent.description length]) ? aEvent.abstract : aEvent.description;
 	roomLabel.text = [@"Room: " stringByAppendingString:aEvent.room];
     trackLabel.text = [@"Track: " stringByAppendingString:aEvent.track];

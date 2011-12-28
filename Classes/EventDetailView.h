@@ -25,6 +25,7 @@
 	IBOutlet UILabel *startLabel;
 	IBOutlet UILabel *durationLabel;
 	IBOutlet UILabel *subtitleLabel;
+    IBOutlet UILabel *speakerLabel;
 	IBOutlet UILabel *idLabel;
 	IBOutlet UILabel *languageLabel;	
     IBOutlet UILabel *trackLabel;

@@ -107,6 +107,18 @@
 		if ([elementName isEqualToString:@"track"]){
 			[aEvent setValue:theCleanestString forKey:elementName];
 		}
+        if ([elementName isEqualToString:@"person"]){
+            if (aEvent.speaker != nil) {
+                NSString *speakerTemp = [[aEvent.speaker stringByAppendingString:@", "] stringByAppendingString:theCleanestString];
+                NSLog(@"Speaker: %@",speakerTemp);
+                [aEvent setValue:speakerTemp forKey:@"speaker"];
+            }
+            else {
+                NSLog(@"Speaker: %@",theCleanestString);
+                [aEvent setValue:theCleanestString forKey:@"speaker"];
+            }
+        }
+        
 		[aEvent setValue:tempString forKey:@"date"];
         
         NSDateFormatter *df = [[NSDateFormatter alloc] init];

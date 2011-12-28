@@ -22,6 +22,7 @@
 	NSString *date;
 	NSString *language;
 	NSString *track;
+    NSString *speaker;
     
     NSDate *startDate;
     NSDate *realDate;
@@ -40,6 +41,7 @@
 @property (nonatomic, retain) NSString *date;
 @property (nonatomic, retain) NSString *language;
 @property (nonatomic, retain) NSString *track;
+@property (nonatomic, retain) NSString *speaker;
 @property (nonatomic, retain) NSDate *startDate;
 @property (nonatomic, retain) NSDate *realDate;
 @property (nonatomic) BOOL reminderSet;

@@ -11,7 +11,7 @@
 
 @implementation Event
 
-@synthesize title, room, abstract, description, eventID, subtitle, start, duration,date,language,track,startDate,realDate,reminderSet;
+@synthesize title, room, abstract, description, eventID, subtitle, start, duration,date,language,track,startDate,realDate,reminderSet,speaker;
 
 - (void)encodeWithCoder:(NSCoder *)coder;
 {
@@ -27,6 +27,7 @@
     [coder encodeObject:language forKey:@"language"];
     [coder encodeObject:track forKey:@"track"];
     [coder encodeObject:startDate forKey:@"startDate"];
+    [coder encodeObject:speaker forKey:@"speaker"];
     [coder encodeObject:realDate forKey:@"realDate"];
     [coder encodeBool:reminderSet forKey:@"reminderSet"];
 
@@ -48,6 +49,7 @@
         self.track = [coder decodeObjectForKey:@"track"];
         self.startDate = [coder decodeObjectForKey:@"startDate"];
         self.realDate = [coder decodeObjectForKey:@"realDate"];
+        self.speaker = [coder decodeObjectForKey:@"speaker"];
         self.reminderSet = [coder decodeBoolForKey:@"reminderSet"];
 
         self.eventID = [coder decodeIntegerForKey:@"eventID"];

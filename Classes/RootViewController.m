@@ -217,7 +217,7 @@
                 return @"Wednesday";
                 break;
             case 2:
-                return @"Thurdsay";
+                return @"Thursday";
                 break;
             case 3:
                 return @"Friday";
@@ -479,8 +479,9 @@
         NSRange titleResultsRange = [aEvent.title rangeOfString:searchText options:NSCaseInsensitiveSearch];
         NSRange subtitleResultsRange = [aEvent.subtitle rangeOfString:searchText options:NSCaseInsensitiveSearch];
         NSRange abstractResultsRange = [aEvent.abstract rangeOfString:searchText options:NSCaseInsensitiveSearch];
+        NSRange speakerResultsRange = [aEvent.speaker rangeOfString:searchText options:NSCaseInsensitiveSearch];
         
-        if (titleResultsRange.length > 0 || subtitleResultsRange.length >0 || abstractResultsRange.length > 0)
+        if (titleResultsRange.length > 0 || subtitleResultsRange.length > 0 || abstractResultsRange.length > 0 || speakerResultsRange.length >0)
             [searchAllEvents addObject:aEvent];
     }
     

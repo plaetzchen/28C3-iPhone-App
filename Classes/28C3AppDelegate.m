@@ -75,21 +75,25 @@
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection_ 
 {
     //NSLog(@"Succeeded! Received %d bytes of data",[fahrplanData length]);
-    NSString *txt = [[NSString alloc] initWithData:fahrplanData encoding: NSUTF8StringEncoding];
-
-    NSArray *paths = NSSearchPathForDirectoriesInDomains
-    (NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    
-    NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", documentsDirectory];
-   
-    NSFileManager *fm = [NSFileManager defaultManager];
-    [fm removeItemAtPath:fileName error:nil];
-    [txt writeToFile:fileName atomically:NO encoding:NSUTF8StringEncoding error:nil];
-    [txt release];
+    if ([fahrplanData length] > 100){
+        NSString *txt = [[NSString alloc] initWithData:fahrplanData encoding: NSUTF8StringEncoding];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains (NSDocumentDirectory, NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        
+        NSString *fileName = [NSString stringWithFormat:@"%@/fahrplan.xml", documentsDirectory];
+        
+        NSFileManager *fm = [NSFileManager defaultManager];
+        [fm removeItemAtPath:fileName error:nil];
+        [txt writeToFile:fileName atomically:NO encoding:NSUTF8StringEncoding error:nil];
+        [txt release];
+        usingOfflineData = NO;
+    }
+    else {
+        usingOfflineData = YES;
+    }
     [connection release];
     connection = nil;
-    usingOfflineData = NO;
     [self parseXML];
 }
 
