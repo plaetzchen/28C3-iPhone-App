@@ -110,11 +110,9 @@
         if ([elementName isEqualToString:@"person"]){
             if (aEvent.speaker != nil) {
                 NSString *speakerTemp = [[aEvent.speaker stringByAppendingString:@", "] stringByAppendingString:theCleanestString];
-                NSLog(@"Speaker: %@",speakerTemp);
                 [aEvent setValue:speakerTemp forKey:@"speaker"];
             }
             else {
-                NSLog(@"Speaker: %@",theCleanestString);
                 [aEvent setValue:theCleanestString forKey:@"speaker"];
             }
         }

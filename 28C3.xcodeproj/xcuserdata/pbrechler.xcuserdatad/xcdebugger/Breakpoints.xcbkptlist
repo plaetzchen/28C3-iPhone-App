@@ -37,20 +37,6 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/XMLParser.m"
-         timestampString = "346772414.341567"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "117"
-         endingLineNumber = "117"
-         landmarkName = "-parser:didEndElement:namespaceURI:qualifiedName:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         isPathRelative = "1"
-         filePath = "Classes/XMLParser.m"
          timestampString = "346772452.43229"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
