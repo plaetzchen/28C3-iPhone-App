@@ -112,7 +112,7 @@
 								<string key="NSFrame">{{6, 35}, {307, 12}}</string>
 								<reference key="NSSuperview" ref="924580380"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="8227820"/>
+								<reference key="NSNextKeyView" ref="258852661"/>
 								<reference key="IBUIBackgroundColor" ref="178125527"/>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
@@ -339,6 +339,18 @@
 								<reference key="IBUIFontDescription" ref="671686972"/>
 								<reference key="IBUIFont" ref="89451196"/>
 							</object>
+							<object class="IBUIScrollView" id="258852661">
+								<reference key="NSNextResponder" ref="924580380"/>
+								<int key="NSvFlags">268</int>
+								<string key="NSFrame">{{6.5, 5.5}, {307, 37}}</string>
+								<reference key="NSSuperview" ref="924580380"/>
+								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="8227820"/>
+								<string key="NSReuseIdentifierKey">_NS:190</string>
+								<bool key="IBUIClipsSubviews">YES</bool>
+								<bool key="IBUIMultipleTouchEnabled">YES</bool>
+								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
+							</object>
 						</object>
 						<string key="NSFrameSize">{320, 367}</string>
 						<reference key="NSSuperview" ref="654992904"/>
@@ -479,6 +491,14 @@
 				</object>
 				<object class="IBConnectionRecord">
 					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">asTitleLabel</string>
+						<reference key="source" ref="372490531"/>
+						<reference key="destination" ref="258852661"/>
+					</object>
+					<int key="connectionID">44</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">delegate</string>
 						<reference key="source" ref="924580380"/>
 						<reference key="destination" ref="372490531"/>
@@ -533,6 +553,7 @@
 							<reference ref="739414957"/>
 							<reference ref="633337555"/>
 							<reference ref="8227820"/>
+							<reference ref="258852661"/>
 						</object>
 						<reference key="parent" ref="654992904"/>
 					</object>
@@ -591,6 +612,11 @@
 						<reference key="object" ref="8227820"/>
 						<reference key="parent" ref="924580380"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">43</int>
+						<reference key="object" ref="258852661"/>
+						<reference key="parent" ref="924580380"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -612,6 +638,8 @@
 					<string>34.IBPluginDependency</string>
 					<string>38.IBPluginDependency</string>
 					<string>41.IBPluginDependency</string>
+					<string>43.CustomClassName</string>
+					<string>43.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
 					<string>9.IBPluginDependency</string>
 				</object>
@@ -632,6 +660,8 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>AutoScrollLabel</string>
+					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>
@@ -648,11 +678,19 @@
 				<reference key="dict.values" ref="0"/>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">42</int>
+			<int key="maxID">44</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
+				<object class="IBPartialClassDescription">
+					<string key="className">AutoScrollLabel</string>
+					<string key="superclassName">UIScrollView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/AutoScrollLabel.h</string>
+					</object>
+				</object>
 				<object class="IBPartialClassDescription">
 					<string key="className">EventDetailView</string>
 					<string key="superclassName">UIViewController</string>
@@ -672,6 +710,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>abstractText</string>
+							<string>asTitleLabel</string>
 							<string>durationLabel</string>
 							<string>idLabel</string>
 							<string>image</string>
@@ -687,6 +726,7 @@
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UITextView</string>
+							<string>AutoScrollLabel</string>
 							<string>UILabel</string>
 							<string>UILabel</string>
 							<string>UIImageView</string>
@@ -705,6 +745,7 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>abstractText</string>
+							<string>asTitleLabel</string>
 							<string>durationLabel</string>
 							<string>idLabel</string>
 							<string>image</string>
@@ -722,6 +763,10 @@
 							<object class="IBToOneOutletInfo">
 								<string key="name">abstractText</string>
 								<string key="candidateClassName">UITextView</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">asTitleLabel</string>
+								<string key="candidateClassName">AutoScrollLabel</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">durationLabel</string>

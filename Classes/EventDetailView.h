@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WebView.h"
+#import "AutoScrollLabel.h"
 
 @class Event, WebView, ReminderView;
 
@@ -31,10 +32,12 @@
     IBOutlet UILabel *trackLabel;
     IBOutlet UIScrollView *scrollView;
     IBOutlet UIImageView *image;
+    IBOutlet AutoScrollLabel *asTitleLabel;
 }
 
 @property (nonatomic, retain) Event *aEvent;
 @property (nonatomic) BOOL fromFavorites;
+@property (nonatomic, retain) IBOutlet AutoScrollLabel *asTitleLabel;
 
 -(IBAction)actionButtonPressed:(id)sender;
 - (BOOL) date:(NSDate*)date isBetweenDate:(NSDate*)beginDate andDate:(NSDate*)endDate;

@@ -13,7 +13,7 @@
 
 @implementation EventDetailView
 
-@synthesize aEvent,fromFavorites;
+@synthesize aEvent,fromFavorites, asTitleLabel;
 
 #pragma mark -
 #pragma mark View lifecycle
@@ -31,8 +31,6 @@
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"28c3_background"]];
 }
 
-
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
 	
@@ -41,7 +39,15 @@
 	abstractText.font = [UIFont fontWithName:@"Courier" size:15];
 	abstractText.textColor = [UIColor whiteColor];
 	
-	titleLabel.text = aEvent.title;
+	if (aEvent.title.length > 22) {
+        titleLabel.text = nil;
+        asTitleLabel.text = aEvent.title;
+        asTitleLabel.textColor = [UIColor colorWithRed:0.577 green:0.409 blue:0.065 alpha:1.000];
+    } else {
+        asTitleLabel.text = nil;
+        titleLabel.text =  aEvent.title;
+    }
+    
 	subtitleLabel.text = aEvent.subtitle;
     speakerLabel.text = aEvent.speaker;
 	abstractText.text = ([aEvent.abstract length] > [aEvent.description length]) ? aEvent.abstract : aEvent.description;
