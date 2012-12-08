@@ -1,1099 +1,0 @@
-T27C3
-v7
-r0
-t314288373.121876
-cCheck dependencies
-cCpResource build/AppStore-iphoneos/27C3.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Info.plist _7C3-Info.plist
-cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
-cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
-cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.xib
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon.png Icon.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon@2x.png Icon@2x.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default.png Default.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default@2x.png Default@2x.png
-cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/WebView.xib
-cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.xib
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/community.png community.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/culture.png culture.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/hacking.png hacking.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/making.png making.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/science.png science.png
-cCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/society.png society.png
-cCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/HelpView.xib
-cCpResource build/AppStore-iphoneos/27C3.app/fahrplan.xml fahrplan.xml
-cCpResource build/AppStore-iphoneos/27C3.app/scifi.caf scifi.caf
-cProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-cProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/main.o /Users/pbrechler/Dropbox/XCode/27C3/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/_7C3AppDelegate.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/RootViewController.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/XMLParser.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/Event.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/EventDetailView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/WebView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/ReminderView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/HelpView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/main.o /Users/pbrechler/Dropbox/XCode/27C3/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/_7C3AppDelegate.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3 normal armv6
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/RootViewController.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/XMLParser.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/Event.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/EventDetailView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/WebView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/ReminderView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/HelpView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cLd /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3 normal armv7
-cCreateUniversalBinary /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3 normal "armv6 armv7"
-cGenerateDSYMFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app.dSYM /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3
-cProcessProductPackaging "/Users/pbrechler/Library/MobileDevice/Provisioning Profiles/7A769896-EF41-443E-AC3E-51B22F174A00.mobileprovision" /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/embedded.mobileprovision
-cTouch /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent
-cCodeSign /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-cValidate /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
-c000000004CF24A4F0000000000000110
-t1290947151
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-c000000004CB3DFCF00000000000001A7
-t1286856655
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-c000000004CB3DFCF00000000000001E5
-t1286856655
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC10EF500000000003532B0
-t1287720693
-s3486384
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC10F4700000000003E1F20
-t1287720775
-s4071200
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC10F1C0000000000001466
-t1287720732
-s5222
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC11AE60000000000000AA1
-t1287723750
-s2721
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC11B750000000000C769F0
-t1287723893
-s13068784
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/usr/include/Availability.h
-c000000004CB3FBB80000000000001ADD
-t1286863800
-s6877
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.h
-c000000004D00F83600000000000003C3
-t1291909174
-s963
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m
-c000000004D00F83300000000000001E1
-t1291909171
-s481
-i"Event.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.h
-c000000004D00FF4F00000000000000DC
-t1291910991
-s220
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m
-c000000004D0100DC00000000000005A9
-t1291911388
-s1449
-i"HelpView.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.h
-c000000004CFF54BD0000000000000156
-t1291801789
-s342
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m
-c000000004D0A5C7B00000000000008B9
-t1292524667
-s2233
-i"WebView.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.h
-c000000004D00F847000000000000033C
-t1291909191
-s828
-i<UIKit/UIKit.h>
-i"WebView.h"
-i"ReminderView.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m
-c000000004D00F9E00000000000000E90
-t1291909600
-s3728
-i"EventDetailView.h"
-i"Event.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.xib
-c000000004D00F8F800000000000096C2
-t1291909368
-s38594
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.h
-c000000004D0006620000000000000162
-t1291847266
-s354
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m
-c000000004D0AF3610000000000001C23
-t1292563297
-s7203
-i"ReminderView.h"
-i"Event.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.xib
-c000000004CFFFC120000000000004433
-t1291844626
-s17459
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.h
-c000000004D0AF6BC0000000000000354
-t1292564156
-s852
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m
-c000000004D0AF62500000000000022CB
-t1292564005
-s8907
-i"RootViewController.h"
-i"_7C3AppDelegate.h"
-i"Event.h"
-i"EventDetailView.h"
-i"HelpView.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.h
-c000000004CFF0163000000000000010C
-t1291780451
-s268
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m
-c000000004D00F8BF0000000000000D62
-t1291909311
-s3426
-i"XMLParser.h"
-i"_7C3AppDelegate.h"
-i"Event.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.h
-c000000004D0AF6C90000000000000259
-t1292564169
-s601
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m
-c000000004D0AF73700000000000010CA
-t1292564279
-s4298
-i"_7C3AppDelegate.h"
-i"RootViewController.h"
-i"XMLParser.h"
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Default.png
-c000000004CFFFB5B000000000000B639
-t1291844443
-s46649
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Default@2x.png
-c000000004CFFFB460000000000022401
-t1291844422
-s140289
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Event.h
-c000000004D00F83600000000000003C3
-t1291909174
-s963
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/HelpView.h
-c000000004D00FF4F00000000000000DC
-t1291910991
-s220
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/HelpView.xib
-c000000004D0AF1B4000000000000A2BB
-t1292562868
-s41659
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Icon.png
-c000000004CFFFAEC000000000000148B
-t1291844332
-s5259
-
-N/Users/pbrechler/Dropbox/XCode/27C3/Icon@2x.png
-c000000004CFFFAD60000000000003F2B
-t1291844310
-s16171
-
-N/Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
-c000000004D01008E000000000000678A
-t1291911310
-s26506
-
-N/Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
-c000000004CFEF15C0000000000004391
-t1291776348
-s17297
-
-N/Users/pbrechler/Dropbox/XCode/27C3/WebView.h
-c000000004CFF54BD0000000000000156
-t1291801789
-s342
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/WebView.xib
-c000000004CFF55D70000000000004610
-t1291802071
-s17936
-
-N/Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch
-c000000004CFECA3A000000000000013A
-t1291766330
-s314
-i<Availability.h>
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent
-t1292595572
-s413
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3
-t1292595571
-s55700
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3.LinkFileList
-c000000004D0104AD0000000000000417
-t1291912365
-s1047
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/Event.o
-t1292595569
-s15368
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/EventDetailView.o
-t1292595570
-s58576
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/HelpView.o
-t1292595570
-s38248
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/ReminderView.o
-t1292595570
-s64268
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/RootViewController.o
-t1292595569
-s72924
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/WebView.o
-t1292595569
-s49420
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/XMLParser.o
-t1292595569
-s55328
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/_7C3AppDelegate.o
-t1292595569
-s61208
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/main.o
-t1292595568
-s6504
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3
-t1292595571
-s55680
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3.LinkFileList
-c000000004D0104AD0000000000000417
-t1291912365
-s1047
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/Event.o
-t1292595571
-s15412
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/EventDetailView.o
-t1292595571
-s58588
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/HelpView.o
-t1292595571
-s38260
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/ReminderView.o
-t1292595571
-s64252
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/RootViewController.o
-t1292595570
-s72752
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/WebView.o
-t1292595571
-s49424
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/XMLParser.o
-t1292595571
-s55344
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/_7C3AppDelegate.o
-t1292595570
-s61144
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/main.o
-t1292595570
-s6484
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/com.apple.build-tools.platform.validate
-t2
-s0
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-t1292595572
-s918
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app.dSYM
-t1292595571
-s102
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3
-t1292595571
-s117120
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default.png
-t1291912540
-s50185
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default@2x.png
-t1291912540
-s141286
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/EventDetailView.nib
-t1292595566
-s3593
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/HelpView.nib
-t1292595567
-s3835
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon.png
-t1291912539
-s5427
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon@2x.png
-t1291912539
-s15957
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Info.plist
-t1292595564
-s965
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/MainWindow.nib
-t1292595565
-s1698
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/PkgInfo
-t1292595564
-s8
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/ReminderView.nib
-t1292595566
-s934
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/ResourceRules.plist
-t1291912538
-s485
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/RootViewController.nib
-t1292595565
-s959
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/WebView.nib
-t1292595566
-s1054
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/community.png
-t1291912540
-s833
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/culture.png
-t1291912541
-s833
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/embedded.mobileprovision
-t1291912541
-s7065
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/fahrplan.xml
-t1292562469
-s178441
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/hacking.png
-t1291912541
-s833
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/making.png
-t1291912541
-s833
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/science.png
-t1291912541
-s833
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/scifi.caf
-t1292563324
-s89511
-
-N/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/society.png
-t1291912541
-s833
-
-N/Users/pbrechler/Dropbox/XCode/27C3/community.png
-c000000004D00FADE0000000000000362
-t1291909854
-s866
-
-N/Users/pbrechler/Dropbox/XCode/27C3/culture.png
-c000000004D00FB360000000000000362
-t1291909942
-s866
-
-N/Users/pbrechler/Dropbox/XCode/27C3/fahrplan.xml
-c000000004D0AEFA7000000000002B909
-t1292562343
-s178441
-
-N/Users/pbrechler/Dropbox/XCode/27C3/hacking.png
-c000000004D00FB550000000000000362
-t1291909973
-s866
-
-N/Users/pbrechler/Dropbox/XCode/27C3/main.m
-c000000004CFECA3A0000000000000171
-t1291766330
-s369
-i<UIKit/UIKit.h>
-
-N/Users/pbrechler/Dropbox/XCode/27C3/making.png
-c000000004D00FB720000000000000362
-t1291910002
-s866
-
-N/Users/pbrechler/Dropbox/XCode/27C3/science.png
-c000000004D00FB8B0000000000000362
-t1291910027
-s866
-
-N/Users/pbrechler/Dropbox/XCode/27C3/scifi.caf
-c000000004D0AF3350000000000015DA7
-t1292563253
-s89511
-
-N/Users/pbrechler/Dropbox/XCode/27C3/society.png
-c000000004D00FBA50000000000000362
-t1291910053
-s866
-
-N/Users/pbrechler/Library/MobileDevice/Provisioning Profiles/7A769896-EF41-443E-AC3E-51B22F174A00.mobileprovision
-c000000004CFF0CC10000000000001B99
-t1291783361
-s7065
-
-N/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-abfuvhmotdiedcggqkvvihpkrtfz/_7C3_Prefix.pch.gch
-t1291783522
-s9783000
-
-N/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch.gch
-t1292595568
-s9783000
-
-N/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch.gch
-t1292595568
-s10254040
-
-N/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-hcewbkjywnskdcfedreacqnwkppo/_7C3_Prefix.pch.gch
-t1291783522
-s10249944
-
-N_7C3-Info.plist
-c000000004D0AF37C0000000000000458
-t1292563324
-s1112
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies314288364#314288364#0(0"0(0#1#0"3343187568374212096#0"0#
-
-CCodeSign /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-s314288372.107608
-e314288372.585875
-r1
-xCodeSign
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-lSLF07#2@41"CodeSign build/AppStore-iphoneos/27C3.app314288372#314288372#0(0"0(0#0#68"/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app8612238272#623"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Distribution: Philip Brechler" --resource-rules=/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/ResourceRules.plist --entitlements /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/Event.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288369.335604
-e314288369.642757
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/Event.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m314288369#314288369#0(0"0(0#0#54"/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m8612381792#1695"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/Event.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/EventDetailView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288369.642854
-e314288370.143414
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/EventDetailView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m314288369#314288370#0(0"0(0#0#61"/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m8610720160#1712"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/EventDetailView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/HelpView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288370.143510
-e314288370.231037
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/HelpView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m314288370#314288370#0(0"0(0#0#57"/Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m8604574336#1701"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/HelpView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/ReminderView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288370.000104
-e314288370.357317
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/ReminderView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m314288370#314288370#0(0"0(0#0#58"/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m8609945600#1706"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/ReminderView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/RootViewController.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288368.816692
-e314288369.705711
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/RootViewController.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@72"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m314288368#314288369#0(0"0(0#0#64"/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m8612362528#1718"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/RootViewController.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/WebView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288369.705814
-e314288369.999920
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/WebView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m314288369#314288370#0(0"0(0#0#56"/Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m8610195168#1699"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/WebView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/XMLParser.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288369.087475
-e314288369.335474
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/XMLParser.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@63"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m314288369#314288369#0(0"0(0#0#55"/Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m8603934464#1700"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/XMLParser.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/_7C3AppDelegate.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288368.537754
-e314288369.087376
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/_7C3AppDelegate.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m314288368#314288369#0(0"0(0#0#61"/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m8611012544#1712"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/_7C3AppDelegate.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/main.o /Users/pbrechler/Dropbox/XCode/27C3/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288368.536633
-e314288368.816575
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/main.o
-x/Users/pbrechler/Dropbox/XCode/27C3/main.m
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@50"Compile /Users/pbrechler/Dropbox/XCode/27C3/main.m314288368#314288368#0(0"0(0#0#42"/Users/pbrechler/Dropbox/XCode/27C3/main.m8611101312#1682"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/main.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/main.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/Event.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288371.162668
-e314288371.373971
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/Event.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@62"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m314288371#314288371#0(0"0(0#0#54"/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m8610422368#1695"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/Event.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/EventDetailView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288371.166331
-e314288371.431779
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/EventDetailView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m314288371#314288371#0(0"0(0#0#61"/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m8604595936#1712"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/EventDetailView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/HelpView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288371.555182
-e314288371.645093
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/HelpView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@65"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m314288371#314288371#0(0"0(0#0#57"/Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m8610179776#1701"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/../HelpView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/HelpView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/ReminderView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288371.431882
-e314288371.728482
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/ReminderView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@66"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m314288371#314288371#0(0"0(0#0#58"/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m8611573664#1706"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/ReminderView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/RootViewController.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288370.493768
-e314288370.913036
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/RootViewController.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@72"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m314288370#314288370#0(0"0(0#0#64"/Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m8597108192#1718"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/RootViewController.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/RootViewController.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/WebView.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288371.374064
-e314288371.555001
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/WebView.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@64"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m314288371#314288371#0(0"0(0#0#56"/Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m8612539936#1699"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/../WebView.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/WebView.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/XMLParser.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288370.913149
-e314288371.162568
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/XMLParser.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@63"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m314288370#314288371#0(0"0(0#0#55"/Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m8612341824#1700"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/XMLParser.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/XMLParser.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/_7C3AppDelegate.o /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288370.318062
-e314288370.493652
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/_7C3AppDelegate.o
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@69"Compile /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m314288370#314288370#0(0"0(0#0#61"/Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m8604237920#1712"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/Classes/_7C3AppDelegate.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/_7C3AppDelegate.o0#
-
-CCompileC build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/main.o /Users/pbrechler/Dropbox/XCode/27C3/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288370.231144
-e314288370.317968
-r1
-xCompileC
-xbuild/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/main.o
-x/Users/pbrechler/Dropbox/XCode/27C3/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@50"Compile /Users/pbrechler/Dropbox/XCode/27C3/main.m314288370#314288370#0(0"0(0#0#42"/Users/pbrechler/Dropbox/XCode/27C3/main.m8612413056#1682"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -include /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch -c /Users/pbrechler/Dropbox/XCode/27C3/main.m -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/main.o0#
-
-CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.xib
-s314288365.567916
-e314288366.557053
-r1
-xCompileXIB
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.xib
-lSLF07#2@38"CompileXIB Classes/EventDetailView.xib314288365#314288366#0(0"0(0#0#63"/Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.xib8613075648#551"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/EventDetailView.nib /Users/pbrechler/Dropbox/XCode/27C3/Classes/EventDetailView.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.xib
-s314288366.487661
-e314288366.921821
-r1
-xCompileXIB
-x/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.xib
-lSLF07#2@35"CompileXIB Classes/ReminderView.xib314288366#314288366#0(0"0(0#0#60"/Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.xib8611238816#545"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/ReminderView.nib /Users/pbrechler/Dropbox/XCode/27C3/Classes/ReminderView.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/HelpView.xib
-s314288366.557486
-e314288367.187614
-r1
-xCompileXIB
-x/Users/pbrechler/Dropbox/XCode/27C3/HelpView.xib
-lSLF07#2@23"CompileXIB HelpView.xib314288366#314288367#0(0"0(0#0#48"/Users/pbrechler/Dropbox/XCode/27C3/HelpView.xib8613074080#529"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/HelpView.nib /Users/pbrechler/Dropbox/XCode/27C3/HelpView.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
-s314288364.704295
-e314288365.576011
-r1
-xCompileXIB
-x/Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib314288364#314288365#0(0"0(0#0#50"/Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib8612574656#533"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/MainWindow.nib /Users/pbrechler/Dropbox/XCode/27C3/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
-s314288364.756313
-e314288365.567832
-r1
-xCompileXIB
-x/Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib
-lSLF07#2@33"CompileXIB RootViewController.xib314288364#314288365#0(0"0(0#0#58"/Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib8612228288#549"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/RootViewController.nib /Users/pbrechler/Dropbox/XCode/27C3/RootViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/pbrechler/Dropbox/XCode/27C3/WebView.xib
-s314288365.576350
-e314288366.487504
-r1
-xCompileXIB
-x/Users/pbrechler/Dropbox/XCode/27C3/WebView.xib
-lSLF07#2@22"CompileXIB WebView.xib314288365#314288366#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/WebView.xib8612077536#527"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/WebView.nib /Users/pbrechler/Dropbox/XCode/27C3/WebView.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default.png Default.png
-s313605339.893692
-e313605340.134655
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default.png
-xDefault.png
-lSLF07#2@68"CopyPNGFile build/AppStore-iphoneos/27C3.app/Default.png Default.png313605339#313605340#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/Default.png8605619392#553"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/Default.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default@2x.png Default@2x.png
-s313605340.134741
-e313605340.961834
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default@2x.png
-xDefault@2x.png
-lSLF07#2@74"CopyPNGFile build/AppStore-iphoneos/27C3.app/Default@2x.png Default@2x.png313605340#313605340#0(0"0(0#0#50"/Users/pbrechler/Dropbox/XCode/27C3/Default@2x.png8608057472#559"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/Default@2x.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Default@2x.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon.png Icon.png
-s313605339.732935
-e313605339.776603
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon.png
-xIcon.png
-lSLF07#2@62"CopyPNGFile build/AppStore-iphoneos/27C3.app/Icon.png Icon.png313605339#313605339#0(0"0(0#0#44"/Users/pbrechler/Dropbox/XCode/27C3/Icon.png8607401536#547"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/Icon.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon@2x.png Icon@2x.png
-s313605339.776692
-e313605339.893590
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon@2x.png
-xIcon@2x.png
-lSLF07#2@68"CopyPNGFile build/AppStore-iphoneos/27C3.app/Icon@2x.png Icon@2x.png313605339#313605339#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/Icon@2x.png8607206688#553"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/Icon@2x.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Icon@2x.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/community.png community.png
-s313605340.961926
-e313605340.999781
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/community.png
-xcommunity.png
-lSLF07#2@72"CopyPNGFile build/AppStore-iphoneos/27C3.app/community.png community.png313605340#313605341#0(0"0(0#0#49"/Users/pbrechler/Dropbox/XCode/27C3/community.png8604131968#557"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/community.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/community.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/culture.png culture.png
-s313605340.999875
-e313605341.036589
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/culture.png
-xculture.png
-lSLF07#2@68"CopyPNGFile build/AppStore-iphoneos/27C3.app/culture.png culture.png313605341#313605341#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/culture.png8607968960#553"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/culture.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/culture.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/hacking.png hacking.png
-s313605341.036680
-e313605341.065263
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/hacking.png
-xhacking.png
-lSLF07#2@68"CopyPNGFile build/AppStore-iphoneos/27C3.app/hacking.png hacking.png313605341#313605341#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/hacking.png8607336608#553"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/hacking.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/hacking.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/making.png making.png
-s313605341.065359
-e313605341.107982
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/making.png
-xmaking.png
-lSLF07#2@66"CopyPNGFile build/AppStore-iphoneos/27C3.app/making.png making.png313605341#313605341#0(0"0(0#0#46"/Users/pbrechler/Dropbox/XCode/27C3/making.png8607017152#551"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/making.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/making.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/science.png science.png
-s313605341.108072
-e313605341.278708
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/science.png
-xscience.png
-lSLF07#2@68"CopyPNGFile build/AppStore-iphoneos/27C3.app/science.png science.png313605341#313605341#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/science.png8605603968#553"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/science.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/science.png0#
-
-CCopyPNGFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/society.png society.png
-s313605341.278803
-e313605341.312608
-r1
-xCopyPNGFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/society.png
-xsociety.png
-lSLF07#2@68"CopyPNGFile build/AppStore-iphoneos/27C3.app/society.png society.png313605341#313605341#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/society.png8605488512#553"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/pbrechler/Dropbox/XCode/27C3/society.png /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/society.png0#
-
-CCpResource build/AppStore-iphoneos/27C3.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-s313605338.872956
-e313605338.932514
-r1
-xCpResource
-xbuild/AppStore-iphoneos/27C3.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist313605338#313605338#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist5922070114188801024#509"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app0#
-
-CCpResource build/AppStore-iphoneos/27C3.app/fahrplan.xml fahrplan.xml
-s314255269.200580
-e314255269.227745
-r1
-xCpResource
-xbuild/AppStore-iphoneos/27C3.app/fahrplan.xml
-xfahrplan.xml
-lSLF07#2@17"Copy fahrplan.xml314255269#314255269#0(0"0(0#0#48"/Users/pbrechler/Dropbox/XCode/27C3/fahrplan.xml15481338470531188#468"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/pbrechler/Dropbox/XCode/27C3/fahrplan.xml /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app0#
-
-CCpResource build/AppStore-iphoneos/27C3.app/scifi.caf scifi.caf
-s314256124.354468
-e314256124.365652
-r1
-xCpResource
-xbuild/AppStore-iphoneos/27C3.app/scifi.caf
-xscifi.caf
-lSLF07#2@14"Copy scifi.caf314256124#314256124#0(0"0(0#0#45"/Users/pbrechler/Dropbox/XCode/27C3/scifi.caf8616501600#465"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -strip-debug-symbols -resolve-src-symlinks /Users/pbrechler/Dropbox/XCode/27C3/scifi.caf /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app0#
-
-CCreateUniversalBinary /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3 normal "armv6 armv7"
-s314288371.890684
-e314288371.908290
-r1
-xCreateUniversalBinary
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3
-xnormal
-xarmv6 armv7
-lSLF07#2@80"CreateUniversalBinary build/AppStore-iphoneos/27C3.app/27C3 normal "armv6 armv7"314288371#314288371#0(0"0(0#0#47"/Users/pbrechler/Dropbox/XCode/27C3/armv6 armv78596642528#491"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3 /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3 -output /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C30#
-
-CGenerateDSYMFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app.dSYM /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3
-s314288371.908379
-e314288372.048160
-r1
-xGenerateDSYMFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app.dSYM
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3
-lSLF07#2@92"GenerateDSYMFile build/AppStore-iphoneos/27C3.app.dSYM build/AppStore-iphoneos/27C3.app/27C3314288371#314288372#0(0"0(0#0#73"/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C38612342432#350"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/27C3 -o /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app.dSYM0#
-
-CLd /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3 normal armv6
-s314288370.357411
-e314288371.166228
-r1
-xLd
-x/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3
-xnormal
-xarmv6
-lSLF07#2@112"Link /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3314288370#314288371#0(0"0(0#0#0"8603983552#838"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -filelist /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C3.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv6/27C30#
-
-CLd /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3 normal armv7
-s314288371.728573
-e314288371.890588
-r1
-xLd
-x/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3
-xnormal
-xarmv7
-lSLF07#2@112"Link /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3314288371#314288371#0(0"0(0#0#0"8598973152#838"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv IPHONEOS_DEPLOYMENT_TARGET 4.0    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -filelist /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C3.LinkFileList -dead_strip -miphoneos-version-min=4.0 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/Objects-normal/armv7/27C30#
-
-CProcessInfoPlistFile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Info.plist _7C3-Info.plist
-s314288364.678543
-e314288364.704197
-r1
-xProcessInfoPlistFile
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Info.plist
-x_7C3-Info.plist
-lSLF07#2@23"Process _7C3-Info.plist314288364#314288364#0(0"0(0#0#51"/Users/pbrechler/Dropbox/XCode/27C3/_7C3-Info.plist31244169098821736#547"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility _7C3-Info.plist -genpkginfo /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/ResourceRules.plist -o /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/Info.plist0#
-
-CProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-abfuvhmotdiedcggqkvvihpkrtfz/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-s313476321.295133
-e313476322.207156
-r1
-xProcessPCH
-x/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-abfuvhmotdiedcggqkvvihpkrtfz/_7C3_Prefix.pch.gch
-x_7C3_Prefix.pch
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@26"Precompile _7C3_Prefix.pch313476321#313476322#0(0"0(0#0#51"/Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch8640842496#1583"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch -o /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-abfuvhmotdiedcggqkvvihpkrtfz/_7C3_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
-s314288367.187824
-e314288368.391367
-r1
-xProcessPCH
-x/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch.gch
-x_7C3_Prefix.pch
-xnormal
-xarmv6
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@26"Precompile _7C3_Prefix.pch314288367#314288368#0(0"0(0#0#51"/Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch8612331424#1583"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv6 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch -o /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ebocxyfojlcevidzfnwoxmfqnsjz/_7C3_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s314288367.188708
-e314288368.536533
-r1
-xProcessPCH
-x/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch.gch
-x_7C3_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@26"Precompile _7C3_Prefix.pch314288367#314288368#0(0"0(0#0#51"/Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch8612231936#1583"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.0 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch -o /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-ewdpmfhfelnvaggtewugctkcomzb/_7C3_Prefix.pch.gch0#
-
-CProcessPCH /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-hcewbkjywnskdcfedreacqnwkppo/_7C3_Prefix.pch.gch _7C3_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s313476321.296504
-e313476322.302705
-r1
-xProcessPCH
-x/var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-hcewbkjywnskdcfedreacqnwkppo/_7C3_Prefix.pch.gch
-x_7C3_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@26"Precompile _7C3_Prefix.pch313476321#313476322#0(0"0(0#0#51"/Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch8640447200#1583"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-generated-files.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-own-target-headers.hmap -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-all-target-headers.hmap -iquote /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3-project-headers.hmap -F/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos -I/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/include -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources/armv7 -I/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/DerivedSources -DNS_BLOCK_ASSERTIONS=1 -c /Users/pbrechler/Dropbox/XCode/27C3/_7C3_Prefix.pch -o /var/folders/aY/aYJguItyGx8y5DaBxNVzhE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/_7C3_Prefix-hcewbkjywnskdcfedreacqnwkppo/_7C3_Prefix.pch.gch0#
-
-CProcessProductPackaging "/Users/pbrechler/Library/MobileDevice/Provisioning Profiles/7A769896-EF41-443E-AC3E-51B22F174A00.mobileprovision" /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/embedded.mobileprovision
-s313605341.932608
-e313605341.933993
-r1
-xProcessProductPackaging
-x/Users/pbrechler/Library/MobileDevice/Provisioning Profiles/7A769896-EF41-443E-AC3E-51B22F174A00.mobileprovision
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/embedded.mobileprovision
-lSLF07#2@196"ProcessProductPackaging "/Users/pbrechler/Library/MobileDevice/Provisioning Profiles/7A769896-EF41-443E-AC3E-51B22F174A00.mobileprovision" build/AppStore-iphoneos/27C3.app/embedded.mobileprovision313605341#313605341#0(0"0(0#0#93"/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/embedded.mobileprovision8603481472#421"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/pbrechler/Library/MobileDevice/Provisioning Profiles/7A769896-EF41-443E-AC3E-51B22F174A00.mobileprovision" -o /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent
-s314288372.052632
-e314288372.107531
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-x/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent
-lSLF07#2@169"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent314288372#314288372#0(0"0(0#0#92"/Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent8596605984#420"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/pbrechler/Dropbox/XCode/27C3/build/27C3.build/AppStore-iphoneos/27C3.build/27C3.xcent0#
-
-CTouch /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-s314288372.048343
-e314288372.052534
-r1
-xTouch
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-lSLF07#2@74"Touch /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app314288372#314288372#0(0"0(0#0#0"8610042272#258"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app0#
-
-CValidate /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-s314288372.586115
-e314288373.121625
-r1
-xValidate
-x/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app
-lSLF07#2@41"Validate build/AppStore-iphoneos/27C3.app314288372#314288373#0(0"0(0#0#68"/Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app8611831616#367"    cd /Users/pbrechler/Dropbox/XCode/27C3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PRODUCT_TYPE com.apple.product-type.application    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/Validation /Users/pbrechler/Dropbox/XCode/27C3/build/AppStore-iphoneos/27C3.app0#
-

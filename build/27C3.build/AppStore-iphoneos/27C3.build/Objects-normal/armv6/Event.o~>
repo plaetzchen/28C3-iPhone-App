@@ -1,7 +1,0 @@
-/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m:14: error: no declaration of property 'language' found in the interface
-/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m:14: error: no declaration of property 'track' found in the interface
-/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m: In function '-[Event dealloc]':
-/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m:27: error: 'language' undeclared (first use in this function)
-/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m:27: error: (Each undeclared identifier is reported only once
-/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m:27: error: for each function it appears in.)
-/Users/pbrechler/Dropbox/XCode/27C3/Classes/../Event.m:28: error: 'track' undeclared (first use in this function)
